@@ -1,0 +1,320 @@
+
+
+<!DOCTYPE html>
+
+ <html>
+
+   <head>
+
+
+     <style>
+     * {
+          box-sizing: border-box;
+       }
+
+       input[type=text], select, textarea
+	  {
+         width: 40%;
+         padding: 10px;
+		 box-shadow: 2px 1px #888888;
+         border: 2px bold #ccc;
+		 
+         border-radius: 4px;
+         
+		 
+      }
+
+    label {
+            padding: 10px 5px 5px 0;
+            display: inline-block;
+			
+         }
+
+      input[type=submit]
+    {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      float: right;
+   }
+
+       input[type=submit]:hover
+	 {     
+           background-color: #45a049;
+      }
+
+   .container {
+           border-radius: 20px;
+           background-color: #e6e6e6;
+           padding: 90px;
+		   width: 90% ;
+          
+		   
+          }
+
+       .col-25
+	  {
+          float: left;
+          width: 20%;
+          margin-top: 5px;
+       }
+	   
+	   
+	   .col-26
+	   {
+	   
+	     float: right;
+         width: 30%;
+         margin-top: 5px;
+	   
+	   }
+	   
+       .col-75
+	   {
+               float: left;
+               width: 75%;
+               margin-top: 10px;
+        }
+
+         .col-7
+		 {
+             float: right;
+             width: 0%;
+             margin-top: 50px;
+           }
+
+
+
+       /* Clear floats after the columns */
+        .row:after 
+		{
+                   content: "";
+                   display: table;
+                   clear: both;
+                  }
+
+
+       title_info
+	   { 
+              background-color: #11F270;
+              font-weight:bold;
+              font-size: 18px;
+              color: black;
+        }
+
+
+
+        @media screen and (max-width: 600px) 
+	 {
+       .col-25, .col-75, input[type=submit]
+	   {
+          width: 100%;
+          margin-top: 0;
+        }
+		
+}
+
+    </style>
+	
+       </head>
+	   
+  <body>
+
+      <h2 style="text-align:center;">Bulid Your Resume</h2>
+
+ 
+    <div class="container">
+
+         <title_info><u>Contact Information : </u></title_info>
+
+
+
+    <div class="row">
+      <div class="col-26">
+        <label for="name">Upload Your Photo Here</label>
+      </div>
+      <div class="col-7">
+        <input type="file" required name="pic" accept="image/*">
+      </div>
+    </div>
+	
+  
+    <div class="row">
+      <div class="col-25">
+        <label for="cadd">Current Address : </label>
+      </div>
+      <div class="col-75">
+        <input type="text" required id="cadd" name="current address" placeholder="Enter Your Current Address">
+      </div>
+    </div>
+	
+
+    <div class="row">
+      <div class="col-25">
+         <label for="contact">Contact Number : </label>
+      </div>
+      <div class="col-75">
+        <input type="text" required id="contact" name="contact no" placeholder="Enter Your Contact Number">
+      </div>
+    </div>
+	
+
+	
+	 <div class="row">
+      <div class="col-25">
+         <label for="email">Email : </label>
+      </div>
+      <div class="col-75">
+        <input type="text" required id="email" name="email add" placeholder="Enter Your Email">
+      </div>
+    </div>
+	
+	<br>
+	<br>
+	<br>
+	
+	
+	
+	<title_info> <u>Career Objective :</u> </title_info>
+	
+	<div class="row">
+      <div class="col-25">
+        <label for="objective"></label>
+      </div>
+      <div class="col-75">
+        <textarea required id="objective" name="objective" placeholder="Write about your career objective" style="height:150px"></textarea>
+      </div>
+    
+	
+	
+	<title_info> <u>Personal Information :</u> </title_info>
+	
+	
+	<br>
+	<br>
+	
+	
+	   <div class="row">
+      <div class="col-25">
+        <label for="fname">Father’s Name : </label>
+      </div>
+      <div class="col-75">
+        <input type="text" required id="fname" name="fa name" placeholder="Enter Your Father’s Name">
+      </div>
+    </div>
+	
+	
+	
+	<div class="row">
+      <div class="col-25">
+        <label for="mname">Mother’s Name : </label>
+      </div>
+      <div class="col-75">
+        <input type="text" required id="mname" name="mo name" placeholder="Enter Your Mother’s Name">
+      </div>
+    </div>
+	
+	
+	
+	
+	<div class="row">
+      <div class="col-25">
+        <label for="padd">Permanent Address : </label>
+      </div>
+      <div class="col-75">
+        <input type="text" required id="padd" name="per add" placeholder="Enter Your Permanent Address">
+      </div>
+    </div>
+	 
+	 
+	 <div class="row">
+      <div class="col-25"> 
+         <label for="dob">Date of Birth : </label>
+      </div>
+      <div class="col-75">
+        
+	 <input type="date" required name="Date of Birth">
+     
+      </div>
+    </div>
+	 
+	 	<div class="row">
+      <div class="col-25">
+        <label for="nationality"> Nationality : </label>
+      </div>
+      <div class="col-75">
+        <input type="text" required id="nationality" name="nationality name" placeholder="Enter Your Nationality">
+      </div>
+    </div>
+	
+    
+	<div class="row">
+      <div class="col-25">
+        <label for="gender">Gender : </label>
+      </div>
+      <div class="col-75">
+        <select required id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="others">Others</option>
+        </select>
+      </div>
+    </div>
+	
+	
+		<div class="row">
+      <div class="col-25">
+        <label for="religion">  Religion : </label>
+      </div>
+      <div class="col-75">
+        <input type="text" required id="religion" name="religion name" placeholder="Enter Your Religion">
+      </div>
+    </div>
+	
+	  
+	<div class="row">
+      <div class="col-25">
+        <label for="blood">Blood Group : </label>
+      </div>
+      <div class="col-75">
+        <select required id="blood" name="blood">
+          <option value="apos">A+</option>
+		   <option value="aneg"> A-</option>
+		    <option value="bpos">B+</option> 
+			 <option value="bneg">B-</option>
+			  <option value="opos">O+</option> 
+			   <option value="oneg">O-</option>
+			    <option value="abpos">AB+</option>
+				 <option value="abneg">AB-</option> 
+          
+        </select>
+      </div>
+    </div>
+	
+	
+	<div class="row">
+      <div class="col-25">
+        <label for="mstatus">Marital Status :</label>
+      </div>
+      <div class="col-75">
+        <select id="mstatus" name="mstatus">
+          <option value="single">Single</option>
+          <option value="married">Married</option>
+          <option value="divorced">Divorced</option> 
+        </select>
+      </div>
+    </div>
+	
+	
+    
+    
+    </form>
+	
+      </div>
+
+       </body>
+	   
+ </html>
