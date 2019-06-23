@@ -1,7 +1,1 @@
-# Ignore Everything 
-*
-
-#But not these Files ...
-
-!.gitignore
-!CSE434Project01ResumeBuilder.java
+!.java
