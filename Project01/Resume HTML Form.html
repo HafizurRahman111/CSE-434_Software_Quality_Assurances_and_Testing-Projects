@@ -7,32 +7,106 @@
 
         <head>
 
-
             <style>
-		   
-            
+              
+			 * {
+                  box-sizing: border-box;                      /* Allign All Boxes */ 
+               }
 
+               input[type=text], select, textarea              /* Input Boxes Design */ 
+	          {
+                 width: 45%;
+                 padding: 10px;
+		         box-shadow: 2px 1px #888888;
+                 border: 2px bold #ccc;
+                 border-radius: 4px;
+         
+               }
+			  
+
+             label
+			{
+              padding: 10px 5px 5px 0;                    /* Labels (Input Field Names) Allign  */       
+              display: inline-block;
+			
+             }
+			
+
+              .container                                 /* Background with Labels Allign  */       
+		     {           
+				  border-radius: 20px;
+                  background-color: #e6e6e6;
+                  padding: 90px;
+		          width: 90% ;
+              }
+			  
+			  		   
+	          .col-1                                        /* Allign Labels and Input in one Line from left side */   
+	         {
+                float: left;
+                width: 20%;
+                margin-top: 5px;
+				
+             }
+			  
+			  
+	         .col-2                                        /* Photo Upload Field Allign in right side */   
+	        {   
+	           float: right;
+               width: 30%;
+               margin-top: 5px;
+	        }
+
+        		
+			.col-5                                         /* Control Gap between two input fields */   
+	        {
+               float: left; 
+               width: 75%;
+               margin-top: 10px;
+            }
+			
+			
+             .col-6
+		    {
+              float: right;                                /* Allign Photo upload field Box */
+              width: 0%;
+              margin-top: 50px;
+            }
+                  
+					 
+             .row:after                                    /* Clear floats after the columns so that labels are alligned properly in left side */
+		    {
+                content: "";
+                display: table;
+                clear: both;
+				
+            }
+
+             title_info                                     /* Titles color and underline */
+	        { 
+              background-color: #11F270;
+              font-weight:bold;
+              font-size: 18px;
+              color: black;
+            }
 
 
             </style>
 			
 			
 			
-			
-	
         </head>
 	   
 	   
     <body>
 
 
-           <h2 style="text-align:center;"> Bulid Your Resume Here </h2>
+       <h2 style="text-align:center;"> Bulid Your Resume Here </h2>
 
  
         <div class="container">
 
           <title_info><u>Contact Information : </u></title_info>
-
 
 
         <div class="row">
@@ -95,7 +169,6 @@
          </div>
     
 	
-	
 	    <title_info> <u>Personal Information :</u> </title_info>
 	
 	
@@ -124,8 +197,7 @@
           </div>
         </div>
 		
-		 
-		
+		 	
 		<div class="row">
         <div class="col-1">
         <label for="padd">Permanent Address : </label>
@@ -182,8 +254,7 @@
         <input type="text" required id="religion" name="religion name" placeholder="Enter Your Religion">
        </div>
      </div>
-	
-	  
+	 
 	  
 	  <div class="row">
       <div class="col-1">
@@ -221,22 +292,10 @@
     </div>
 	
 	 
-	
 	 <title_info> <u>Educational Qualification :</u> </title_info>
 	
-	
-	
-	
-
-
 
     </body>
-	   
-	   
-	   
-	   
-	   
-	   
-	   
+	      
 	   
 </html>
