@@ -1,0 +1,7 @@
+# Ignore Everything 
+*
+
+#But not these Files ...
+
+!.gitignore
+!.java
