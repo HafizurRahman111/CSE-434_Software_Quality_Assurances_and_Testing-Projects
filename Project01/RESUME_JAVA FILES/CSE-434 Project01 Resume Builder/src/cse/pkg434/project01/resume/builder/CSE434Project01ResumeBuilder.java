@@ -25,13 +25,14 @@ import javafx.scene.Group;
 import javafx.scene.control.ListView; 
 
 import javafx.scene.text.Text; 
+import javafx.scene.control.TextArea;
+import javafx.scene.layout.VBox;
 import javafx.scene.text.Font; 
 import javafx.scene.control.TextField; 
 import javafx.scene.text.FontPosture; 
 import javafx.scene.text.FontWeight;  
 
 import javafx.scene.paint.Color; 
-
 
 
 /**
@@ -51,27 +52,32 @@ import javafx.scene.paint.Color;
       
       Text name = new Text();                    // Text Object for Name created
       TextField nameField = new TextField();     // Input Field Object created for Name  
-      
-      
+           
       Text caddress = new Text();                    // Text Object for Current Address created
       TextField caddressField = new TextField();     // Input Field Object created for Current Address  
       
       Text contact = new Text();                    // Text Object for Contact Number created
       TextField contactField = new TextField();     // Input Field Object created for Contact Number 
       
-      Text email = new Text();                    // Text Object for Contact email created
-      TextField emailField = new TextField();     // Input Field Object created for email
+      Text email = new Text();                     // Text Object for Contact email created
+      TextField emailField = new TextField();      // Input Field Object created for email
+         
+      Text careerinfo = new Text();               // Text Object for Career Objective created
+      
+      TextArea careerObjective = new TextArea();  // Multiline Text Input Box for Career Objective
+      VBox careerInput = new VBox(careerObjective);  
+
+              
+      
+      Group form_gui = new Group(title, contactinfo, name,nameField ,caddress,caddressField,contact,contactField,email,emailField,careerinfo,careerInput);   // Group object created here 
       
       
       
-      Group form_gui = new Group(title, contactinfo, name,nameField ,caddress,caddressField,contact,contactField,email,emailField );   // Group object created here 
-      
-      Scene scene = new Scene(form_gui, 850, 700);                       // Scene object Created Here
+      Scene scene = new Scene(form_gui, 850, 700);             // Scene object Created Here
       
       stage.setTitle("CSE-434 Project01 Resume Builder by Hafizur Rahman");  // Set the title for Stage
       
-      
-      
+           
       // Title    - RESUME BUILDER 
       
       title.setText("RESUME BUILDER");  // Title Text
@@ -93,10 +99,7 @@ import javafx.scene.paint.Color;
       contactinfo.setFont(Font.font("Times New Roman",FontPosture.REGULAR,18));//Font Settings for Text Title 
       contactinfo.setStrokeWidth(1);       //  Stroke size 
       contactinfo.setUnderline(true);  
-      
-      
-      
-      
+           
       // Name 
       name.setText("Name :");  // Name Text
       name.setX(80);           //Position of the name text 
@@ -107,8 +110,7 @@ import javafx.scene.paint.Color;
       
       nameField.setLayoutX(270);  // Position setup for Name Input Field
       nameField.setLayoutY(100);
-     
-       
+            
       // Current Address 
       
       caddress.setText("Current Address :");  //Current Address Text
@@ -129,7 +131,7 @@ import javafx.scene.paint.Color;
       contactField.setLayoutX(270);  // Position setup for Contact Number Input Field
       contactField.setLayoutY(160);
       
-        // Email
+      // Email
       
       email.setText("Email :");  //Contact Number Text
       email.setX(80);           //Position of the Contact Number 
@@ -139,20 +141,36 @@ import javafx.scene.paint.Color;
       emailField.setLayoutX(270);  // Position setup for Contact Number Input Field
       emailField.setLayoutY(190);
       
+      // Career Objective 
       
-     
+       careerinfo.setText("Career Objective :");  // Career Objective Text Title Here 
+         
+       careerinfo.setX(20);                //Position of the Career Objective Text 
+       careerinfo.setY(280); 
+       careerinfo.setFont(Font.font("Times New Roman",FontPosture.REGULAR,18));//Font Settings for Text Title 
+       careerinfo.setStrokeWidth(1);       //  Stroke size 
+       careerinfo.setUnderline(true);  
        
        
-      stage.setScene(scene);    // Scene added in stage       
-      stage.show();             //  Stage elements show 
+       careerInput.setLayoutX(270);  //  Position setup for Career Objective Input Field
+       careerInput.setLayoutY(282);  
+       careerInput.setPrefWidth(230);   // Setup position Career Objective Input Box
+       careerInput.setPrefHeight(60);
+       
+       
+       
+       
+       
+       
+       stage.setScene(scene);    // Scene added in stage       
+       stage.show();             //  Stage elements show 
         
-      
-      
-      
-      
-      
+          
     }
 
+     
+     
+     
     /**
      * @param args the command line arguments
      */
@@ -162,5 +180,5 @@ import javafx.scene.paint.Color;
     }
     
      
-     
+  
 }
