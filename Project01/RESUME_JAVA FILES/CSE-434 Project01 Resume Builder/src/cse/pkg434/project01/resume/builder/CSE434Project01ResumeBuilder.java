@@ -59,8 +59,12 @@ import javafx.scene.paint.Color;
       Text contact = new Text();                    // Text Object for Contact Number created
       TextField contactField = new TextField();     // Input Field Object created for Contact Number 
       
+      Text email = new Text();                    // Text Object for Contact email created
+      TextField emailField = new TextField();     // Input Field Object created for email
       
-      Group form_gui = new Group(title, contactinfo, name,nameField ,caddress,caddressField,contact,contactField );   // Group object created here 
+      
+      
+      Group form_gui = new Group(title, contactinfo, name,nameField ,caddress,caddressField,contact,contactField,email,emailField );   // Group object created here 
       
       Scene scene = new Scene(form_gui, 850, 700);                       // Scene object Created Here
       
@@ -124,6 +128,16 @@ import javafx.scene.paint.Color;
       
       contactField.setLayoutX(270);  // Position setup for Contact Number Input Field
       contactField.setLayoutY(160);
+      
+        // Email
+      
+      email.setText("Email :");  //Contact Number Text
+      email.setX(80);           //Position of the Contact Number 
+      email.setY(210);
+      email.setFont(Font.font("Arial",FontPosture.REGULAR,16)); //Font Settings for Contact Number Text  
+      
+      emailField.setLayoutX(270);  // Position setup for Contact Number Input Field
+      emailField.setLayoutY(190);
       
       
      
