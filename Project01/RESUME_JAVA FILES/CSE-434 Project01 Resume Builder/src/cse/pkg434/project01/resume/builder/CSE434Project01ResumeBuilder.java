@@ -53,9 +53,14 @@ import javafx.scene.paint.Color;
       TextField nameField = new TextField();     // Input Field Object created for Name  
       
       
+      Text caddress = new Text();                    // Text Object for Current Address created
+      TextField caddressField = new TextField();     // Input Field Object created for Current Address  
+      
+      Text contact = new Text();                    // Text Object for Contact Number created
+      TextField contactField = new TextField();     // Input Field Object created for Contact Number 
       
       
-      Group form_gui = new Group(title, contactinfo, name,nameField );   // Group object created here 
+      Group form_gui = new Group(title, contactinfo, name,nameField ,caddress,caddressField,contact,contactField );   // Group object created here 
       
       Scene scene = new Scene(form_gui, 850, 700);                       // Scene object Created Here
       
@@ -90,20 +95,38 @@ import javafx.scene.paint.Color;
       
       // Name 
       name.setText("Name :");  // Name Text
-      name.setX(60);           //Position of the name text 
+      name.setX(80);           //Position of the name text 
       name.setY(116);
       name.setFont(Font.font("Arial",FontPosture.REGULAR,16)); //Font Settings for Name Text  
                
       // Input Field For Name
       
-      nameField.setLayoutX(120);  // Position setup for Name Input Field
+      nameField.setLayoutX(270);  // Position setup for Name Input Field
       nameField.setLayoutY(100);
      
        
+      // Current Address 
       
-  
-       
-       
+      caddress.setText("Current Address :");  //Current Address Text
+      caddress.setX(80);           //Position of the Current Address text 
+      caddress.setY(146);
+      caddress.setFont(Font.font("Arial",FontPosture.REGULAR,16)); //Font Settings for Current Address Text  
+      
+      caddressField.setLayoutX(270);  // Position setup for Current Address Input Field
+      caddressField.setLayoutY(130);
+      
+      // Contact Number 
+      
+      contact.setText("Contact Number :");  //Contact Number Text
+      contact.setX(80);           //Position of the Contact Number 
+      contact.setY(180);
+      contact.setFont(Font.font("Arial",FontPosture.REGULAR,16)); //Font Settings for Contact Number Text  
+      
+      contactField.setLayoutX(270);  // Position setup for Contact Number Input Field
+      contactField.setLayoutY(160);
+      
+      
+     
        
        
       stage.setScene(scene);    // Scene added in stage       
