@@ -116,6 +116,11 @@ import javax.imageio.ImageIO;
                "A-","B+","B-","O+","O-","AB+","AB-") );  // Blood Group Choice Box Object Created
       
       
+      Text marital_Status = new Text();                      // Text Object for Marital Status created
+      ChoiceBox marital_Statusbox = new ChoiceBox(FXCollections.observableArrayList(
+              "Single","Married","Divorced","Widow") );  // Marital Status Choice Box Object Created
+      
+      
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
       
       PhotoView = new ImageView();                                 // Photo View Object Created
@@ -167,7 +172,7 @@ import javax.imageio.ImageIO;
               careerInput,btnImageLoad,PhotoView,PhotoBox,personalinfo,faname,
               fanameField,motname,motnameField,perAddress,perAddressField,dobText,
               dobhBox,nationality,nationalityField,gender,genderbox,religion,
-              religionField,blood,bloodbox
+              religionField,blood,bloodbox,marital_Status,marital_Statusbox
               
               
               
@@ -382,7 +387,19 @@ import javax.imageio.ImageIO;
       bloodbox.setLayoutX(520);                // Position Setup for Blood Group Choice Box
       bloodbox.setLayoutY(310);
       
+      // Marital Status 
       
+      marital_Status.setText("Marital Status : ");            // Marital Status Text
+      marital_Status.setX(370);                               //Position of Marital Status Text 
+      marital_Status.setY(359);
+      marital_Status.setFont(Font.font("Arial",FontPosture.REGULAR,14));  //Font Settings for Marital Status
+      
+      // Marital Status Choice Box Position Setup 
+      
+      marital_Statusbox.setLayoutX(520);                // Position Setup for Marital Status Choice Box
+      marital_Statusbox.setLayoutY(340);
+      
+        
       
    
        stage.setScene(scene);            // Scene added in stage       
