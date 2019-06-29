@@ -138,7 +138,7 @@ import javax.imageio.ImageIO;
       
       
       
-      Scene scene = new Scene(form_gui, 860, 700);             // Scene object Created Here
+      Scene scene = new Scene(form_gui, 910, 700);             // Scene object Created Here
       
       stage.setTitle("CSE-434 Project01 Resume Builder by Hafizur Rahman");  // Set the title for Stage
       
@@ -159,84 +159,85 @@ import javax.imageio.ImageIO;
       
       contactinfo.setText("Contact Information :");  // Contact information Text Title Here
      
-      contactinfo.setX(20);                //Position of the contact information text 
+      contactinfo.setX(15);                //Position of the contact information text 
       contactinfo.setY(75);
-      contactinfo.setFont(Font.font("Times New Roman",FontPosture.REGULAR,18));//Font Settings for Text Title 
+      contactinfo.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));//Font Settings for Text Title 
       contactinfo.setStrokeWidth(1);       //  Stroke size 
       contactinfo.setUnderline(true);  
            
       // Name 
       name.setText("Name :");  // Name Text
-      name.setX(80);           //Position of the name text 
+      name.setX(30);           //Position of the name text 
       name.setY(116);
-      name.setFont(Font.font("Arial",FontPosture.REGULAR,16)); //Font Settings for Name Text  
+      name.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings for Name Text  
                
       // Input Field For Name
       
-      nameField.setLayoutX(270);  // Position setup for Name Input Field
+      nameField.setLayoutX(180);  // Position setup for Name Input Field
       nameField.setLayoutY(100);
             
       // Current Address 
       
       caddress.setText("Current Address :");  //Current Address Text
-      caddress.setX(80);           //Position of the Current Address text 
+      caddress.setX(30);           //Position of the Current Address text 
       caddress.setY(146);
-      caddress.setFont(Font.font("Arial",FontPosture.REGULAR,16)); //Font Settings for Current Address Text  
+      caddress.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings for Current Address Text  
       
-      caddressField.setLayoutX(270);  // Position setup for Current Address Input Field
+      caddressField.setLayoutX(180);  // Position setup for Current Address Input Field
       caddressField.setLayoutY(130);
       
       // Contact Number 
       
       contact.setText("Contact Number :");  //Contact Number Text
-      contact.setX(80);           //Position of the Contact Number 
+      contact.setX(30);           //Position of the Contact Number 
       contact.setY(180);
-      contact.setFont(Font.font("Arial",FontPosture.REGULAR,16)); //Font Settings for Contact Number Text  
+      contact.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings for Contact Number Text  
       
-      contactField.setLayoutX(270);  // Position setup for Contact Number Input Field
+      contactField.setLayoutX(180);  // Position setup for Contact Number Input Field
       contactField.setLayoutY(160);
       
       // Email
       
       email.setText("Email :");  //Contact Number Text
-      email.setX(80);           //Position of the Contact Number 
+      email.setX(30);           //Position of the Contact Number 
       email.setY(210);
-      email.setFont(Font.font("Arial",FontPosture.REGULAR,16)); //Font Settings for Contact Number Text  
+      email.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings for Contact Number Text  
       
-      emailField.setLayoutX(270);  // Position setup for Contact Number Input Field
+      emailField.setLayoutX(180);  // Position setup for Contact Number Input Field
       emailField.setLayoutY(190);
       
       // Career Objective 
       
        careerinfo.setText("Career Objective :");  // Career Objective Text Title Here 
          
-       careerinfo.setX(20);                //Position of the Career Objective Text 
+       careerinfo.setX(15);                //Position of the Career Objective Text 
        careerinfo.setY(280); 
-       careerinfo.setFont(Font.font("Times New Roman",FontPosture.REGULAR,18));//Font Settings for Text Title 
+       careerinfo.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));//Font Settings for Text Title 
        careerinfo.setStrokeWidth(1);       //  Stroke size 
        careerinfo.setUnderline(true);  
        
        
-       careerInput.setLayoutX(270);  //  Position setup for Career Objective Input Field
-       careerInput.setLayoutY(282);  
-       careerInput.setPrefWidth(230);   // Setup position Career Objective Input Box
+       careerInput.setLayoutX(180);  //  Position setup for Career Objective Input Field
+       careerInput.setLayoutY(280);  
+       careerInput.setPrefWidth(180);   // Setup position Career Objective Input Box
        careerInput.setPrefHeight(60);
        
       // Photo Upload Field With Posiiton
       
-       btnImageLoad.setLayoutX(470);  // Photo Upload Field Position
-       btnImageLoad.setLayoutY(97);
+       btnImageLoad.setLayoutX(480);  // Photo Upload Field Position
+       btnImageLoad.setLayoutY(65);
        
-       //
+       // Photo View
        
+       PhotoView.setFitWidth(130);      
+       PhotoView.setFitHeight(160);
        
+       PhotoView.setLayoutX(485);  // Photo View Frame Position with size
+       PhotoView.setLayoutY(92);
+
   
        
-       
-       
-       
-       
-       
+    
        
        
        stage.setScene(scene);    // Scene added in stage       
