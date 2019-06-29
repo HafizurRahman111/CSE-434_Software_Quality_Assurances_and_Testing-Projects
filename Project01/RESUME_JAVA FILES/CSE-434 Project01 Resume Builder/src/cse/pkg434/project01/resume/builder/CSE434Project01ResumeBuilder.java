@@ -29,6 +29,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.text.Text; 
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.VBox;
+import javafx.scene.layout.HBox;
 import javafx.scene.text.Font; 
 import javafx.scene.control.TextField; 
 import javafx.scene.text.FontPosture; 
@@ -96,7 +97,10 @@ import javax.imageio.ImageIO;
       Text perAddress = new Text();                   // Text Object for Permanent Address created
       TextField perAddressField = new TextField();     // Input Field Object created for Permanent Address
       
-      
+      Text dobText = new Text();                   // Text Object for DOB created 
+      DatePicker dobPicker = new DatePicker();    // Date Picker Object Created for DOB 
+      HBox dobhBox = new HBox(dobPicker);         // Box created for DOB
+
       
       
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
@@ -151,7 +155,8 @@ import javax.imageio.ImageIO;
       Group form_gui = new Group(title, contactinfo, name,nameField ,caddress,
               caddressField,contact,contactField,email,emailField,careerinfo,
               careerInput,btnImageLoad,PhotoView,PhotoBox,personalinfo,faname,
-              fanameField,motname,motnameField,perAddress,perAddressField
+              fanameField,motname,motnameField,perAddress,perAddressField,dobText,
+              dobhBox
               
               
               
@@ -307,9 +312,19 @@ import javax.imageio.ImageIO;
       perAddressField.setLayoutX(520);      // Position Setup for Permanent Address Input Field
       perAddressField.setLayoutY(160);
      
-     
+      // Date Of Birth ( DOB )
+      
+      dobText.setText("Date Of Birth :");  // Date Of Birth Text
+      dobText.setX(370);           //Position of Date Of Birth Text 
+      dobText.setY(206);
+      dobText.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings for Date Of Birth
+      
+      // DOB Picker Input Box
+      dobhBox.setLayoutX(520);      // Position Setup for DOB Picker Input Box
+      dobhBox.setLayoutY(190);
+      
+      
  
-   
        
        stage.setScene(scene);    // Scene added in stage       
        stage.show();             //  Stage elements show 
