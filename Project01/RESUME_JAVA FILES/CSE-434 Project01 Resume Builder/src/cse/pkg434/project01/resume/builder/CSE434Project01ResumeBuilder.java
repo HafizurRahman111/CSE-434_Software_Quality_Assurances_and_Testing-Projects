@@ -42,6 +42,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.collections.FXCollections;
 
 import javafx.embed.swing.SwingFXUtils;
 
@@ -104,7 +105,8 @@ import javax.imageio.ImageIO;
       Text nationality = new Text();                      // Text Object for Nationality created
       TextField nationalityField = new TextField();       // Input Field Object created for Nationality  
       
-      
+      Text gender = new Text();                      // Text Object for Gender created
+      ChoiceBox genderbox = new ChoiceBox(FXCollections.observableArrayList("Male", "Female", "Others") );  // Gennder Choice Box Object Created
   
       
       
@@ -161,7 +163,7 @@ import javax.imageio.ImageIO;
               caddressField,contact,contactField,email,emailField,careerinfo,
               careerInput,btnImageLoad,PhotoView,PhotoBox,personalinfo,faname,
               fanameField,motname,motnameField,perAddress,perAddressField,dobText,
-              dobhBox,nationality,nationalityField
+              dobhBox,nationality,nationalityField,gender,genderbox
               
               
               
@@ -339,11 +341,22 @@ import javax.imageio.ImageIO;
       
       nationalityField.setLayoutX(520);        // Position Setup for Nationality Input Field
       nationalityField.setLayoutY(220);
+       
+      // Gender Choice Box Text
       
+      gender.setText("Gender : ");          // Gender Text
+      gender.setX(370);                     //Position of Gender Text 
+      gender.setY(266);
+      gender.setFont(Font.font("Arial",FontPosture.REGULAR,14));  //Font Settings for Gender
+        
+      // Gender Choice Box Position Setup 
+      
+      genderbox.setLayoutX(520);            // Position Setup for Gender Choice Box
+      genderbox.setLayoutY(250);
       
    
-       stage.setScene(scene);    // Scene added in stage       
-       stage.show();             //  Stage elements show 
+       stage.setScene(scene);            // Scene added in stage       
+       stage.show();                     //  Stage elements show 
         
           
     }
