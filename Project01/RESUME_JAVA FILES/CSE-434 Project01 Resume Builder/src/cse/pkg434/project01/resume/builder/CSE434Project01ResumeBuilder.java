@@ -90,6 +90,12 @@ import javax.imageio.ImageIO;
       Text faname = new Text();                      // Text Object for Father's Name created
       TextField fanameField = new TextField();       // Input Field Object created for Father's Name  
       
+      Text motname = new Text();                      // Text Object for Mother’s Name created
+      TextField motnameField = new TextField();       // Input Field Object created for Mother’s Name
+      
+      
+      
+      
       
       
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
@@ -144,7 +150,7 @@ import javax.imageio.ImageIO;
       Group form_gui = new Group(title, contactinfo, name,nameField ,caddress,
               caddressField,contact,contactField,email,emailField,careerinfo,
               careerInput,btnImageLoad,PhotoView,PhotoBox,personalinfo,faname,
-              fanameField
+              fanameField,motname,motnameField
               
               
               
@@ -274,7 +280,24 @@ import javax.imageio.ImageIO;
       fanameField.setLayoutX(520);  // Position Setup for input field
       fanameField.setLayoutY(98);
       
+     
+       // Mother's Name  
+      
+      motname.setText("Mother’s Name :");  // Mother’s Name Text
+      motname.setX(370);           //Position of the Mother’s Name Text 
+      motname.setY(146);
+      motname.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings for Mother’s Name 
+               
+      // Input Field for Mother’s Name 
+      
+      motnameField.setLayoutX(520);  // Position Setup for input field
+      motnameField.setLayoutY(130);
+      
+      
 
+      
+      
+    
     
        
        
