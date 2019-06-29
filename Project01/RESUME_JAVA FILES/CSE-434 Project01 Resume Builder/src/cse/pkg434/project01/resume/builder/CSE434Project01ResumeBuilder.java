@@ -101,6 +101,11 @@ import javax.imageio.ImageIO;
       DatePicker dobPicker = new DatePicker();    // Date Picker Object Created for DOB 
       HBox dobhBox = new HBox(dobPicker);         // Box created for DOB
 
+      Text nationality = new Text();                      // Text Object for Nationality created
+      TextField nationalityField = new TextField();       // Input Field Object created for Nationality  
+      
+      
+  
       
       
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
@@ -156,7 +161,7 @@ import javax.imageio.ImageIO;
               caddressField,contact,contactField,email,emailField,careerinfo,
               careerInput,btnImageLoad,PhotoView,PhotoBox,personalinfo,faname,
               fanameField,motname,motnameField,perAddress,perAddressField,dobText,
-              dobhBox
+              dobhBox,nationality,nationalityField
               
               
               
@@ -322,10 +327,21 @@ import javax.imageio.ImageIO;
       // DOB Picker Input Box
       dobhBox.setLayoutX(520);      // Position Setup for DOB Picker Input Box
       dobhBox.setLayoutY(190);
+          
+      //  Nationality
+      
+      nationality.setText("Nationality :");    // Nationality Text
+      nationality.setX(370);                   //Position of Nationality Text 
+      nationality.setY(236);
+      nationality.setFont(Font.font("Arial",FontPosture.REGULAR,14));  //Font Settings for Nationality
+               
+      // Input Field for Nationality
+      
+      nationalityField.setLayoutX(520);        // Position Setup for Nationality Input Field
+      nationalityField.setLayoutY(220);
       
       
- 
-       
+   
        stage.setScene(scene);    // Scene added in stage       
        stage.show();             //  Stage elements show 
         
