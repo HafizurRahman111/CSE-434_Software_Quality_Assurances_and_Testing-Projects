@@ -109,7 +109,12 @@ import javax.imageio.ImageIO;
       ChoiceBox genderbox = new ChoiceBox(FXCollections.observableArrayList("Male", "Female", "Others") );  // Gennder Choice Box Object Created
   
       Text religion = new Text();                      // Text Object for Religion created
-      TextField religionField = new TextField();       // Input Field Object created for Religion  
+      TextField religionField = new TextField();       // Input Field Object created for Religion
+      
+      Text blood = new Text();                      // Text Object for Blood Group created
+      ChoiceBox bloodbox = new ChoiceBox(FXCollections.observableArrayList("A+",
+               "A-","B+","B-","O+","O-","AB+","AB-") );  // Blood Group Choice Box Object Created
+      
       
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
       
@@ -156,16 +161,13 @@ import javax.imageio.ImageIO;
           });
           
           
-          
-    
-      
       
       Group form_gui = new Group(title, contactinfo, name,nameField ,caddress,
               caddressField,contact,contactField,email,emailField,careerinfo,
               careerInput,btnImageLoad,PhotoView,PhotoBox,personalinfo,faname,
               fanameField,motname,motnameField,perAddress,perAddressField,dobText,
               dobhBox,nationality,nationalityField,gender,genderbox,religion,
-              religionField
+              religionField,blood,bloodbox
               
               
               
@@ -368,15 +370,17 @@ import javax.imageio.ImageIO;
       religionField.setLayoutX(520);        // Position Setup for Religion Field
       religionField.setLayoutY(280);
       
+      // Blood Group Choice Box Text
       
+      blood.setText("Blood Group : ");            // Blood Group Text
+      blood.setX(370);                           //Position of Blood Group Text 
+      blood.setY(329);
+      blood.setFont(Font.font("Arial",FontPosture.REGULAR,14));  //Font Settings for Blood Group
+        
+      // Blood Group Choice Box Position Setup 
       
-      
-      
-      
-      
-      
-      
-      
+      bloodbox.setLayoutX(520);                // Position Setup for Blood Group Choice Box
+      bloodbox.setLayoutY(310);
       
       
       
