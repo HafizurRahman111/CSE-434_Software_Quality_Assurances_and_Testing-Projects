@@ -93,7 +93,8 @@ import javax.imageio.ImageIO;
       Text motname = new Text();                      // Text Object for Mother’s Name created
       TextField motnameField = new TextField();       // Input Field Object created for Mother’s Name
       
-      
+      Text perAddress = new Text();                   // Text Object for Permanent Address created
+      TextField perAddressField = new TextField();     // Input Field Object created for Permanent Address
       
       
       
@@ -150,7 +151,7 @@ import javax.imageio.ImageIO;
       Group form_gui = new Group(title, contactinfo, name,nameField ,caddress,
               caddressField,contact,contactField,email,emailField,careerinfo,
               careerInput,btnImageLoad,PhotoView,PhotoBox,personalinfo,faname,
-              fanameField,motname,motnameField
+              fanameField,motname,motnameField,perAddress,perAddressField
               
               
               
@@ -294,12 +295,21 @@ import javax.imageio.ImageIO;
       motnameField.setLayoutY(130);
       
       
-
+     // Permanent Address 
+     
+      perAddress.setText("Permanent Address :");  // Permanent Address Text
+      perAddress.setX(370);                   //Position of Permanent Address Text 
+      perAddress.setY(176);
+      perAddress.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings for Permanent Address
+               
+      // Input Field for Permanent Address
       
-      
-    
-    
-       
+      perAddressField.setLayoutX(520);      // Position Setup for Permanent Address Input Field
+      perAddressField.setLayoutY(160);
+     
+     
+ 
+   
        
        stage.setScene(scene);    // Scene added in stage       
        stage.show();             //  Stage elements show 
