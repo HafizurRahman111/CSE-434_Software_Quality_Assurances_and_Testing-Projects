@@ -56,7 +56,8 @@ import javax.imageio.ImageIO;
  public class CSE434Project01ResumeBuilder extends Application 
 {
     
-    
+    ImageView PhotoView;
+ 
     
     @Override
      public void start(Stage stage) throws Exception
@@ -83,17 +84,20 @@ import javax.imageio.ImageIO;
       TextArea careerObjective = new TextArea();  // Multiline Text Input Box for Career Objective
       VBox careerInput = new VBox(careerObjective);  
 
-      Text buttonPhoto = new Text();     //   Text Object for Photo Upload
+     
+      Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
+      
+      PhotoView = new ImageView();                                 // Photo View Object Created
+      
+      VBox PhotoBox = new VBox();                                  // Photo Upload And Control  
         
-      
-      Button btnImageLoad = new Button("Click Here");  // Photo Upload Button With Text
-      
+      PhotoBox.getChildren().addAll(btnImageLoad, PhotoView);
       
            btnImageLoad.setOnAction(new EventHandler<ActionEvent>()
           {
              @Override
              
-                  public void handle(ActionEvent arg0) 
+                  public void handle(ActionEvent photo_upload) 
                 {
                   FileChooser photoChooser = new FileChooser();
                 
@@ -102,8 +106,24 @@ import javax.imageio.ImageIO;
                   FileChooser.ExtensionFilter extnFilterGIF = new FileChooser.ExtensionFilter("GIF files (*.gif)", "*.GIF");
            
                   photoChooser.getExtensionFilters().addAll(extnFilterJPG,extnFilterPNG,extnFilterGIF);
+                  
                   File Photofile = photoChooser.showOpenDialog(stage);
                   
+                  
+                  
+                     try 
+                    {
+                       BufferedImage buffImage = ImageIO.read(Photofile);
+                       Image photo_file = SwingFXUtils.toFXImage(buffImage, null);
+                       PhotoView.setImage(photo_file);  
+                
+                     } 
+                     
+                     catch (IOException excp) 
+                     {
+                        Logger.getLogger(CSE434Project01ResumeBuilder.class.getName()).log(Level.SEVERE, null, excp);
+                     }
+                 
                 }
                
                   
@@ -111,15 +131,14 @@ import javax.imageio.ImageIO;
           
           
           
-         
-                
+    
       
       
-      Group form_gui = new Group(title, contactinfo, name,nameField ,caddress,caddressField,contact,contactField,email,emailField,careerinfo,careerInput,buttonPhoto,btnImageLoad);   // Group object created here 
+      Group form_gui = new Group(title, contactinfo, name,nameField ,caddress,caddressField,contact,contactField,email,emailField,careerinfo,careerInput,btnImageLoad,PhotoView,PhotoBox);   // Group object created here 
       
       
       
-      Scene scene = new Scene(form_gui, 850, 700);             // Scene object Created Here
+      Scene scene = new Scene(form_gui, 860, 700);             // Scene object Created Here
       
       stage.setTitle("CSE-434 Project01 Resume Builder by Hafizur Rahman");  // Set the title for Stage
       
@@ -203,36 +222,15 @@ import javax.imageio.ImageIO;
        careerInput.setPrefWidth(230);   // Setup position Career Objective Input Box
        careerInput.setPrefHeight(60);
        
-    
-       // Photo Upload 
-       
-       buttonPhoto.setText("Upload Your Photo :");   // Photo Upload Text
-       buttonPhoto.setX(450);                        //Position of the Photo Upload Text
-       buttonPhoto.setY(116);
-       buttonPhoto.setFont(Font.font("Arial",FontPosture.REGULAR,16)); //Font Settings  
+      // Photo Upload Field With Posiiton
       
-     
-      
-       btnImageLoad.setLayoutX(603);  // Photo Upload Frame Position
-      
+       btnImageLoad.setLayoutX(470);  // Photo Upload Field Position
        btnImageLoad.setLayoutY(97);
        
+       //
        
        
-       
-      
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
+  
        
        
        
