@@ -8,6 +8,7 @@ package cse.pkg434.project01.resume.builder;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 
 import javafx.scene.control.CheckBox; 
@@ -20,6 +21,7 @@ import javafx.scene.layout.GridPane;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.FileChooser;
 import javafx.scene.Group;
 
 import javafx.scene.control.ListView; 
@@ -33,6 +35,18 @@ import javafx.scene.text.FontPosture;
 import javafx.scene.text.FontWeight;  
 
 import javafx.scene.paint.Color; 
+
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import javafx.embed.swing.SwingFXUtils;
+
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javax.imageio.ImageIO;
 
 
 /**
@@ -67,9 +81,17 @@ import javafx.scene.paint.Color;
       TextArea careerObjective = new TextArea();  // Multiline Text Input Box for Career Objective
       VBox careerInput = new VBox(careerObjective);  
 
+      Text buttonPhoto = new Text();     //   Text Object for Photo Upload
+        
+      
+      ////// Test
+      Button btnImageLoad = new Button(); 
+       
+         
+      
               
       
-      Group form_gui = new Group(title, contactinfo, name,nameField ,caddress,caddressField,contact,contactField,email,emailField,careerinfo,careerInput);   // Group object created here 
+      Group form_gui = new Group(title, contactinfo, name,nameField ,caddress,caddressField,contact,contactField,email,emailField,careerinfo,careerInput,buttonPhoto,btnImageLoad);   // Group object created here 
       
       
       
@@ -156,6 +178,24 @@ import javafx.scene.paint.Color;
        careerInput.setLayoutY(282);  
        careerInput.setPrefWidth(230);   // Setup position Career Objective Input Box
        careerInput.setPrefHeight(60);
+       
+    
+       // Photo Upload 
+       
+       buttonPhoto.setText("Upload Your Photo :");   // Photo Upload Text
+       buttonPhoto.setX(450);                        //Position of the Photo Upload Text
+       buttonPhoto.setY(116);
+       buttonPhoto.setFont(Font.font("Arial",FontPosture.REGULAR,16)); //Font Settings  
+      
+     
+       
+      ////// Test
+       btnImageLoad.setLayoutX(603);
+      
+       btnImageLoad.setLayoutY(97);
+       
+       
+       
        
        
        
