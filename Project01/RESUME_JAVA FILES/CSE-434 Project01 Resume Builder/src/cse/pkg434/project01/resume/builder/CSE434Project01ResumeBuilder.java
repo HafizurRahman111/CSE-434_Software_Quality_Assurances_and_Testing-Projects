@@ -63,12 +63,12 @@ import javax.imageio.ImageIO;
      public void start(Stage stage) throws Exception
     {
         
-      Text title = new Text();                   //Text object Created for Title here
+      Text title = new Text();                      //Text object Created for Title here
       
-      Text contactinfo = new Text();             // Text Object for Contact Information created
-      
-      Text name = new Text();                    // Text Object for Name created
-      TextField nameField = new TextField();     // Input Field Object created for Name  
+      Text contactinfo = new Text();                // Text Object for Contact Information created
+   
+      Text name = new Text();                      // Text Object for Name created
+      TextField nameField = new TextField();       // Input Field Object created for Name  
            
       Text caddress = new Text();                    // Text Object for Current Address created
       TextField caddressField = new TextField();     // Input Field Object created for Current Address  
@@ -80,11 +80,18 @@ import javax.imageio.ImageIO;
       TextField emailField = new TextField();      // Input Field Object created for email
          
       Text careerinfo = new Text();               // Text Object for Career Objective created
-      
+        
       TextArea careerObjective = new TextArea();  // Multiline Text Input Box for Career Objective
       VBox careerInput = new VBox(careerObjective);  
 
-     
+      Text personalinfo = new Text();                // Text Object for Personal Information created
+      
+      
+      Text faname = new Text();                      // Text Object for Father's Name created
+      TextField fanameField = new TextField();       // Input Field Object created for Father's Name  
+      
+      
+      
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
       
       PhotoView = new ImageView();                                 // Photo View Object Created
@@ -134,7 +141,15 @@ import javax.imageio.ImageIO;
     
       
       
-      Group form_gui = new Group(title, contactinfo, name,nameField ,caddress,caddressField,contact,contactField,email,emailField,careerinfo,careerInput,btnImageLoad,PhotoView,PhotoBox);   // Group object created here 
+      Group form_gui = new Group(title, contactinfo, name,nameField ,caddress,
+              caddressField,contact,contactField,email,emailField,careerinfo,
+              careerInput,btnImageLoad,PhotoView,PhotoBox,personalinfo,faname,
+              fanameField
+              
+              
+              
+              
+);   // Group object created here 
       
       
       
@@ -224,19 +239,42 @@ import javax.imageio.ImageIO;
        
       // Photo Upload Field With Posiiton
       
-       btnImageLoad.setLayoutX(480);  // Photo Upload Field Position
+       btnImageLoad.setLayoutX(710);  // Photo Upload Field Position
        btnImageLoad.setLayoutY(65);
        
        // Photo View
        
-       PhotoView.setFitWidth(130);      
+       PhotoView.setFitWidth(135);      
        PhotoView.setFitHeight(160);
        
-       PhotoView.setLayoutX(485);  // Photo View Frame Position with size
+       PhotoView.setLayoutX(715);  // Photo View Frame Position with size
        PhotoView.setLayoutY(92);
 
-  
+      
+       // Personal Informations  
+      
+      personalinfo.setText("Personal Information :");  // Personal Information Text Title Here
+     
+      personalinfo.setX(355);                          //Position of the Personal Information text 
+      personalinfo.setY(75);
+      personalinfo.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));   //Font Settings  
+      personalinfo.setStrokeWidth(1);               //  Stroke size 
+      personalinfo.setUnderline(true); 
        
+      
+      // Father’s Name 
+      
+      faname.setText("Father’s Name :");  // Father’s Name Text
+      faname.setX(370);           //Position of the Father’s Name Text 
+      faname.setY(116);
+      faname.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings for Name Text  
+               
+      // Input Field Father’s Name 
+      
+      fanameField.setLayoutX(520);  // Position Setup for input field
+      fanameField.setLayoutY(98);
+      
+
     
        
        
