@@ -108,7 +108,8 @@ import javax.imageio.ImageIO;
       Text gender = new Text();                      // Text Object for Gender created
       ChoiceBox genderbox = new ChoiceBox(FXCollections.observableArrayList("Male", "Female", "Others") );  // Gennder Choice Box Object Created
   
-      
+      Text religion = new Text();                      // Text Object for Religion created
+      TextField religionField = new TextField();       // Input Field Object created for Religion  
       
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
       
@@ -163,7 +164,8 @@ import javax.imageio.ImageIO;
               caddressField,contact,contactField,email,emailField,careerinfo,
               careerInput,btnImageLoad,PhotoView,PhotoBox,personalinfo,faname,
               fanameField,motname,motnameField,perAddress,perAddressField,dobText,
-              dobhBox,nationality,nationalityField,gender,genderbox
+              dobhBox,nationality,nationalityField,gender,genderbox,religion,
+              religionField
               
               
               
@@ -346,13 +348,37 @@ import javax.imageio.ImageIO;
       
       gender.setText("Gender : ");          // Gender Text
       gender.setX(370);                     //Position of Gender Text 
-      gender.setY(266);
+      gender.setY(269);
       gender.setFont(Font.font("Arial",FontPosture.REGULAR,14));  //Font Settings for Gender
         
       // Gender Choice Box Position Setup 
       
       genderbox.setLayoutX(520);            // Position Setup for Gender Choice Box
       genderbox.setLayoutY(250);
+          
+      //  Religion
+      
+      religion.setText("Religion :");    // Religion Text
+      religion.setX(370);                   // Position of Religion Text 
+      religion.setY(299);
+      religion.setFont(Font.font("Arial",FontPosture.REGULAR,14));  //Font Settings for Religion
+               
+      // Input Field for Religion
+      
+      religionField.setLayoutX(520);        // Position Setup for Religion Field
+      religionField.setLayoutY(280);
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
    
        stage.setScene(scene);            // Scene added in stage       
