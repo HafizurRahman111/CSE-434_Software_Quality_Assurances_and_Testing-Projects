@@ -56,6 +56,8 @@ import javax.imageio.ImageIO;
  public class CSE434Project01ResumeBuilder extends Application 
 {
     
+    
+    
     @Override
      public void start(Stage stage) throws Exception
     {
@@ -84,12 +86,34 @@ import javax.imageio.ImageIO;
       Text buttonPhoto = new Text();     //   Text Object for Photo Upload
         
       
-      ////// Test
-      Button btnImageLoad = new Button(); 
-       
-         
+      Button btnImageLoad = new Button("Click Here");  // Photo Upload Button With Text
       
-              
+      
+           btnImageLoad.setOnAction(new EventHandler<ActionEvent>()
+          {
+             @Override
+             
+                  public void handle(ActionEvent arg0) 
+                {
+                  FileChooser photoChooser = new FileChooser();
+                
+                  FileChooser.ExtensionFilter extnFilterJPG = new FileChooser.ExtensionFilter("JPG files (*.jpg)", "*.JPG");
+                  FileChooser.ExtensionFilter extnFilterPNG = new FileChooser.ExtensionFilter("PNG files (*.png)", "*.PNG");
+                  FileChooser.ExtensionFilter extnFilterGIF = new FileChooser.ExtensionFilter("GIF files (*.gif)", "*.GIF");
+           
+                  photoChooser.getExtensionFilters().addAll(extnFilterJPG,extnFilterPNG,extnFilterGIF);
+                  File Photofile = photoChooser.showOpenDialog(stage);
+                  
+                }
+               
+                  
+          });
+          
+          
+          
+         
+                
+      
       
       Group form_gui = new Group(title, contactinfo, name,nameField ,caddress,caddressField,contact,contactField,email,emailField,careerinfo,careerInput,buttonPhoto,btnImageLoad);   // Group object created here 
       
@@ -188,11 +212,26 @@ import javax.imageio.ImageIO;
        buttonPhoto.setFont(Font.font("Arial",FontPosture.REGULAR,16)); //Font Settings  
       
      
-       
-      ////// Test
-       btnImageLoad.setLayoutX(603);
+      
+       btnImageLoad.setLayoutX(603);  // Photo Upload Frame Position
       
        btnImageLoad.setLayoutY(97);
+       
+       
+       
+       
+      
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
        
        
        
@@ -220,5 +259,8 @@ import javax.imageio.ImageIO;
     }
     
      
+     
+   
+    
   
 }
