@@ -129,7 +129,15 @@ import javax.imageio.ImageIO;
         TextField degreename3Field = new TextField();       // Input Field Object created for Degree 3
          TextField degreename4Field = new TextField();       // Input Field Object created for Degree 4
       
+      Text institutionname = new Text();                   // Text Object for Institution Name created
       
+      TextField institutionname1Field = new TextField();       // Input Field Object created for Institution 1
+       TextField institutionname2Field = new TextField();       // Input Field Object created for Institution 2
+        TextField institutionname3Field = new TextField();       // Input Field Object created for Institution 3
+         TextField institutionname4Field = new TextField();       // Input Field Object created for Institution 4
+      
+      
+         
       
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
       
@@ -184,7 +192,8 @@ import javax.imageio.ImageIO;
               dobhBox,nationality,nationalityField,gender,genderbox,religion,
               religionField,blood,bloodbox,marital_Status,marital_Statusbox,
               educationalinfo,degreename,degreename1Field,degreename2Field,
-              degreename3Field,degreename4Field
+              degreename3Field,degreename4Field,institutionname,institutionname1Field,
+              institutionname2Field,institutionname3Field,institutionname4Field
               
               
               
@@ -449,12 +458,37 @@ import javax.imageio.ImageIO;
       degreename4Field.setLayoutX(30);        // Position Setup for Name of degree 4 Input Field
       degreename4Field.setLayoutY(510);
       
- 
+     // Institution Names 
+     
+      institutionname.setText("Institution Names ");  // Institution Names Text
+      institutionname.setX(200);                      //Position of the Institution Names text 
+      institutionname.setY(410);
+      institutionname.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings 
+      
+      
+      // Input Field for Institution 1 
+      
+      institutionname1Field.setLayoutX(200);        // Position Setup for Institution 1 
+      institutionname1Field.setLayoutY(420);
+      
+      // Input Field for Institution 2 
+      
+      institutionname2Field.setLayoutX(200);        // Position Setup for Institution 2
+      institutionname2Field.setLayoutY(450);
+      
+      // Input Field for Institution 3 
+      
+      institutionname3Field.setLayoutX(200);        // Position Setup for Institution 3 
+      institutionname3Field.setLayoutY(480);
+       
+      // Input Field for Institution 4 
+      
+      institutionname4Field.setLayoutX(200);        // Position Setup for Institution 4 
+      institutionname4Field.setLayoutY(510);
       
       
       
-      
-      
+     
    
        stage.setScene(scene);            // Scene added in stage       
        stage.show();                     //  Stage elements show 
