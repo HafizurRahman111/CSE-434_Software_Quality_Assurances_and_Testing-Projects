@@ -121,6 +121,8 @@ import javax.imageio.ImageIO;
               "Single","Married","Divorced","Widow") );  // Marital Status Choice Box Object Created
       
       
+      Text educationalinfo = new Text();                // Text Object for Educational Qualification created
+      
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
       
       PhotoView = new ImageView();                                 // Photo View Object Created
@@ -172,7 +174,8 @@ import javax.imageio.ImageIO;
               careerInput,btnImageLoad,PhotoView,PhotoBox,personalinfo,faname,
               fanameField,motname,motnameField,perAddress,perAddressField,dobText,
               dobhBox,nationality,nationalityField,gender,genderbox,religion,
-              religionField,blood,bloodbox,marital_Status,marital_Statusbox
+              religionField,blood,bloodbox,marital_Status,marital_Statusbox,
+              educationalinfo
               
               
               
@@ -181,7 +184,7 @@ import javax.imageio.ImageIO;
       
       
       
-      Scene scene = new Scene(form_gui, 910, 700);             // Scene object Created Here
+      Scene scene = new Scene(form_gui, 980, 700);             // Scene object Created Here
       
       stage.setTitle("CSE-434 Project01 Resume Builder by Hafizur Rahman");  // Set the title for Stage
       
@@ -279,7 +282,7 @@ import javax.imageio.ImageIO;
        PhotoView.setLayoutY(92);
 
       
-       // Personal Informations  
+      // Personal Informations  
       
       personalinfo.setText("Personal Information :");  // Personal Information Text Title Here
      
@@ -399,7 +402,28 @@ import javax.imageio.ImageIO;
       marital_Statusbox.setLayoutX(520);                // Position Setup for Marital Status Choice Box
       marital_Statusbox.setLayoutY(340);
       
-        
+      // Educational Qualification   
+      
+      educationalinfo.setText("Educational Qualification :");  // Educational Qualification Text Title Here
+     
+      educationalinfo.setX(15);                          //Position of the Educational Qualification text 
+      educationalinfo.setY(390);
+      educationalinfo.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));   //Font Settings  
+      educationalinfo.setStrokeWidth(1);               //  Stroke size 
+      educationalinfo.setUnderline(true); 
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
    
        stage.setScene(scene);            // Scene added in stage       
