@@ -143,8 +143,15 @@ import javax.imageio.ImageIO;
         TextField Boardnname3Field = new TextField();       // Input Field Object created for Board 3
          TextField Boardnname4Field = new TextField();       // Input Field Object created for Board 4
       
+      Text group_sub = new Text();                      // Text Object for Group or Subject created
+      
+      TextField group_sub1Field = new TextField();       // Input Field Object created for Group/Subject 1
+       TextField group_sub2Field = new TextField();       // Input Field Object created for Group/Subject 2
+        TextField group_sub3Field = new TextField();       // Input Field Object created for Group/Subject 3
+         TextField group_sub4Field = new TextField();       // Input Field Object created for Group/Subject 4
       
       
+         
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
       
       PhotoView = new ImageView();                                 // Photo View Object Created
@@ -201,7 +208,8 @@ import javax.imageio.ImageIO;
               degreename3Field,degreename4Field,institutionname,institutionname1Field,
               institutionname2Field,institutionname3Field,institutionname4Field,
               Boardnname,Boardnname1Field,Boardnname2Field,Boardnname3Field,
-              Boardnname4Field
+              Boardnname4Field,group_sub,group_sub1Field,group_sub2Field,
+              group_sub3Field,group_sub4Field
               
               
               
@@ -521,13 +529,25 @@ import javax.imageio.ImageIO;
       Boardnname4Field.setLayoutX(370);        // Position Setup for Board 4 
       Boardnname4Field.setLayoutY(510);
       
+       
+      // Group or Subject
       
+      group_sub.setText("Group/Subject ");       // Group or Subject Text
+      group_sub.setX(540);                       //Position of the Group or Subject text 
+      group_sub.setY(410);
+      group_sub.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings 
       
+      group_sub1Field.setLayoutX(540);      // Input Field for Group or Subject 1    
+      group_sub1Field.setLayoutY(420);
       
+      group_sub2Field.setLayoutX(540);      // Input Field for Group or Subject 2    
+      group_sub2Field.setLayoutY(450);
       
+      group_sub3Field.setLayoutX(540);      // Input Field for Group or Subject 3   
+      group_sub3Field.setLayoutY(480);
       
-      
-      
+      group_sub4Field.setLayoutX(540);      // Input Field for Group or Subject 4    
+      group_sub4Field.setLayoutY(510);
       
       
       
