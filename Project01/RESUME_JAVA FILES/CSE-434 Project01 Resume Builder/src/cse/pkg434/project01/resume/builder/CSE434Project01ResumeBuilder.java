@@ -257,15 +257,15 @@ import javax.imageio.ImageIO;
        careerinfo.setText("Career Objective :");  // Career Objective Text Title Here 
          
        careerinfo.setX(15);                //Position of the Career Objective Text 
-       careerinfo.setY(280); 
+       careerinfo.setY(265); 
        careerinfo.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));//Font Settings for Text Title 
        careerinfo.setStrokeWidth(1);       //  Stroke size 
        careerinfo.setUnderline(true);  
        
        
-       careerInput.setLayoutX(180);  //  Position setup for Career Objective Input Field
+       careerInput.setLayoutX(70);  //  Position setup for Career Objective Input Field
        careerInput.setLayoutY(280);  
-       careerInput.setPrefWidth(180);   // Setup position Career Objective Input Box
+       careerInput.setPrefWidth(260);   // Setup position Career Objective Input Box
        careerInput.setPrefHeight(60);
        
       // Photo Upload Field With Posiiton
@@ -407,7 +407,7 @@ import javax.imageio.ImageIO;
       educationalinfo.setText("Educational Qualification :");  // Educational Qualification Text Title Here
      
       educationalinfo.setX(15);                          //Position of the Educational Qualification text 
-      educationalinfo.setY(390);
+      educationalinfo.setY(385);
       educationalinfo.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));   //Font Settings  
       educationalinfo.setStrokeWidth(1);               //  Stroke size 
       educationalinfo.setUnderline(true); 
