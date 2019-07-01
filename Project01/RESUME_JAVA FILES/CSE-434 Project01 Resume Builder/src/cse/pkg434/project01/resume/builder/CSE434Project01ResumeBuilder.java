@@ -192,7 +192,7 @@ import javax.imageio.ImageIO;
       // Title    - RESUME BUILDER 
       
       title.setText("RESUME BUILDER");  // Title Text
-      title.setX(350);                  //Position of the text Title
+      title.setX(380);                  //Position of the text Title
       title.setY(25);
       title.setFont(Font.font("Times New Roman",FontPosture.REGULAR,20));//Font Settings for Text Title 
               
@@ -270,23 +270,23 @@ import javax.imageio.ImageIO;
        
       // Photo Upload Field With Posiiton
       
-       btnImageLoad.setLayoutX(710);  // Photo Upload Field Position
-       btnImageLoad.setLayoutY(65);
+       btnImageLoad.setLayoutX(740);  // Photo Upload Field Position
+       btnImageLoad.setLayoutY(90);
        
        // Photo View
        
        PhotoView.setFitWidth(135);      
        PhotoView.setFitHeight(160);
        
-       PhotoView.setLayoutX(715);  // Photo View Frame Position with size
-       PhotoView.setLayoutY(92);
+       PhotoView.setLayoutX(745);  // Photo View Frame Position with size
+       PhotoView.setLayoutY(120);
 
       
       // Personal Informations  
       
       personalinfo.setText("Personal Information :");  // Personal Information Text Title Here
      
-      personalinfo.setX(355);                          //Position of the Personal Information text 
+      personalinfo.setX(385);                          //Position of the Personal Information text 
       personalinfo.setY(75);
       personalinfo.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));   //Font Settings  
       personalinfo.setStrokeWidth(1);               //  Stroke size 
@@ -296,7 +296,7 @@ import javax.imageio.ImageIO;
       // Father’s Name 
       
       faname.setText("Father’s Name :");  // Father’s Name Text
-      faname.setX(370);           //Position of the Father’s Name Text 
+      faname.setX(395);           //Position of the Father’s Name Text 
       faname.setY(116);
       faname.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings for Name Text  
                
@@ -309,7 +309,7 @@ import javax.imageio.ImageIO;
        // Mother's Name  
       
       motname.setText("Mother’s Name :");  // Mother’s Name Text
-      motname.setX(370);           //Position of the Mother’s Name Text 
+      motname.setX(395);           //Position of the Mother’s Name Text 
       motname.setY(146);
       motname.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings for Mother’s Name 
                
@@ -322,7 +322,7 @@ import javax.imageio.ImageIO;
      // Permanent Address 
      
       perAddress.setText("Permanent Address :");  // Permanent Address Text
-      perAddress.setX(370);                   //Position of Permanent Address Text 
+      perAddress.setX(395);                   //Position of Permanent Address Text 
       perAddress.setY(176);
       perAddress.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings for Permanent Address
                
@@ -334,7 +334,7 @@ import javax.imageio.ImageIO;
       // Date Of Birth ( DOB )
       
       dobText.setText("Date Of Birth :");  // Date Of Birth Text
-      dobText.setX(370);           //Position of Date Of Birth Text 
+      dobText.setX(395);           //Position of Date Of Birth Text 
       dobText.setY(206);
       dobText.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings for Date Of Birth
       
@@ -345,7 +345,7 @@ import javax.imageio.ImageIO;
       //  Nationality
       
       nationality.setText("Nationality :");    // Nationality Text
-      nationality.setX(370);                   //Position of Nationality Text 
+      nationality.setX(395);                   //Position of Nationality Text 
       nationality.setY(236);
       nationality.setFont(Font.font("Arial",FontPosture.REGULAR,14));  //Font Settings for Nationality
                
@@ -357,7 +357,7 @@ import javax.imageio.ImageIO;
       // Gender Choice Box Text
       
       gender.setText("Gender : ");          // Gender Text
-      gender.setX(370);                     //Position of Gender Text 
+      gender.setX(395);                     //Position of Gender Text 
       gender.setY(269);
       gender.setFont(Font.font("Arial",FontPosture.REGULAR,14));  //Font Settings for Gender
         
@@ -369,7 +369,7 @@ import javax.imageio.ImageIO;
       //  Religion
       
       religion.setText("Religion :");    // Religion Text
-      religion.setX(370);                   // Position of Religion Text 
+      religion.setX(395);                   // Position of Religion Text 
       religion.setY(299);
       religion.setFont(Font.font("Arial",FontPosture.REGULAR,14));  //Font Settings for Religion
                
@@ -381,7 +381,7 @@ import javax.imageio.ImageIO;
       // Blood Group Choice Box Text
       
       blood.setText("Blood Group : ");            // Blood Group Text
-      blood.setX(370);                           //Position of Blood Group Text 
+      blood.setX(395);                           //Position of Blood Group Text 
       blood.setY(329);
       blood.setFont(Font.font("Arial",FontPosture.REGULAR,14));  //Font Settings for Blood Group
         
@@ -393,7 +393,7 @@ import javax.imageio.ImageIO;
       // Marital Status 
       
       marital_Status.setText("Marital Status : ");            // Marital Status Text
-      marital_Status.setX(370);                               //Position of Marital Status Text 
+      marital_Status.setX(395);                               //Position of Marital Status Text 
       marital_Status.setY(359);
       marital_Status.setFont(Font.font("Arial",FontPosture.REGULAR,14));  //Font Settings for Marital Status
       
@@ -414,12 +414,7 @@ import javax.imageio.ImageIO;
       
       
       
-      
-      
-      
-      
-      
-      
+ 
       
       
       
