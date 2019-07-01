@@ -136,8 +136,14 @@ import javax.imageio.ImageIO;
         TextField institutionname3Field = new TextField();       // Input Field Object created for Institution 3
          TextField institutionname4Field = new TextField();       // Input Field Object created for Institution 4
       
-      
+      Text Boardnname = new Text();                   // Text Object for Board Name created
          
+      TextField Boardnname1Field = new TextField();       // Input Field Object created for Board 1
+       TextField Boardnname2Field = new TextField();       // Input Field Object created for Board 2
+        TextField Boardnname3Field = new TextField();       // Input Field Object created for Board 3
+         TextField Boardnname4Field = new TextField();       // Input Field Object created for Board 4
+      
+      
       
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
       
@@ -193,7 +199,9 @@ import javax.imageio.ImageIO;
               religionField,blood,bloodbox,marital_Status,marital_Statusbox,
               educationalinfo,degreename,degreename1Field,degreename2Field,
               degreename3Field,degreename4Field,institutionname,institutionname1Field,
-              institutionname2Field,institutionname3Field,institutionname4Field
+              institutionname2Field,institutionname3Field,institutionname4Field,
+              Boardnname,Boardnname1Field,Boardnname2Field,Boardnname3Field,
+              Boardnname4Field
               
               
               
@@ -486,10 +494,48 @@ import javax.imageio.ImageIO;
       institutionname4Field.setLayoutX(200);        // Position Setup for Institution 4 
       institutionname4Field.setLayoutY(510);
       
+      // Board
+      
+      Boardnname.setText("Board Names ");       // Board Names Text
+      Boardnname.setX(370);                      //Position of the Board Names text 
+      Boardnname.setY(410);
+      Boardnname.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings 
+      
+      // Input Field for Board 1 
+      
+      Boardnname1Field.setLayoutX(370);        // Position Setup for Board 1 
+      Boardnname1Field.setLayoutY(420);
+      
+      // Input Field for Board 2 
+      
+      Boardnname2Field.setLayoutX(370);        // Position Setup for Board 2 
+      Boardnname2Field.setLayoutY(450);
+      
+      // Input Field for Board 3 
+      
+      Boardnname3Field.setLayoutX(370);        // Position Setup for Board 3 
+      Boardnname3Field.setLayoutY(480);
+      
+      // Input Field for Board 4 
+      
+      Boardnname4Field.setLayoutX(370);        // Position Setup for Board 4 
+      Boardnname4Field.setLayoutY(510);
       
       
-     
-   
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
        stage.setScene(scene);            // Scene added in stage       
        stage.show();                     //  Stage elements show 
         
