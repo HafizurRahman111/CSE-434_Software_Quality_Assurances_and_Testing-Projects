@@ -150,7 +150,16 @@ import javax.imageio.ImageIO;
         TextField group_sub3Field = new TextField();       // Input Field Object created for Group/Subject 3
          TextField group_sub4Field = new TextField();       // Input Field Object created for Group/Subject 4
       
+      Text resultinfo = new Text();                      // Text Object for Result created
       
+      TextField result1Field = new TextField();       // Input Field Object created for Result 1
+       TextField result2Field = new TextField();       // Input Field Object created for Result 2
+        TextField result3Field = new TextField();       // Input Field Object created for Result 3
+         TextField result4Field = new TextField();       // Input Field Object created for Result 4 
+         
+         
+         
+         
          
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
       
@@ -209,7 +218,8 @@ import javax.imageio.ImageIO;
               institutionname2Field,institutionname3Field,institutionname4Field,
               Boardnname,Boardnname1Field,Boardnname2Field,Boardnname3Field,
               Boardnname4Field,group_sub,group_sub1Field,group_sub2Field,
-              group_sub3Field,group_sub4Field
+              group_sub3Field,group_sub4Field,resultinfo,result1Field,result2Field,
+              result3Field,result4Field
               
               
               
@@ -550,7 +560,32 @@ import javax.imageio.ImageIO;
       group_sub4Field.setLayoutY(510);
       
       
+      //Result	
       
+      resultinfo.setText("Result ");              // Result Text
+      resultinfo.setX(700);                       //Position of the Result text 
+      resultinfo.setY(410);
+      resultinfo.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings 
+      
+      result1Field.setLayoutX(700);      // Input Field for Result 1    
+      result1Field.setLayoutY(420);
+        result1Field.setPrefWidth(90);    
+        result1Field.setPrefHeight(10);
+      
+      result2Field.setLayoutX(700);      // Input Field for Result 2    
+      result2Field.setLayoutY(450);
+        result2Field.setPrefWidth(90);    
+        result2Field.setPrefHeight(10);
+      
+      result3Field.setLayoutX(700);      // Input Field for Result 3   
+      result3Field.setLayoutY(480);
+        result3Field.setPrefWidth(90);    
+        result3Field.setPrefHeight(10);
+        
+      result4Field.setLayoutX(700);      // Input Field for Result 4    
+      result4Field.setLayoutY(510);
+        result4Field.setPrefWidth(90);    
+        result4Field.setPrefHeight(10);
       
       
       
