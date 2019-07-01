@@ -157,8 +157,12 @@ import javax.imageio.ImageIO;
         TextField result3Field = new TextField();       // Input Field Object created for Result 3
          TextField result4Field = new TextField();       // Input Field Object created for Result 4 
          
-         
-         
+      Text pyear = new Text();                         // Text Object for Passing Year created
+      
+      TextField pyear1Field = new TextField();       // Input Field Object created for Passing year 1
+       TextField pyear2Field = new TextField();       // Input Field Object created for Passing year 2
+        TextField pyear3Field = new TextField();       // Input Field Object created for Passing year 3
+         TextField pyear4Field = new TextField();       // Input Field Object created for Passing year 4 
          
          
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
@@ -219,7 +223,8 @@ import javax.imageio.ImageIO;
               Boardnname,Boardnname1Field,Boardnname2Field,Boardnname3Field,
               Boardnname4Field,group_sub,group_sub1Field,group_sub2Field,
               group_sub3Field,group_sub4Field,resultinfo,result1Field,result2Field,
-              result3Field,result4Field
+              result3Field,result4Field,pyear,pyear1Field,pyear2Field,pyear3Field,
+              pyear4Field
               
               
               
@@ -587,7 +592,32 @@ import javax.imageio.ImageIO;
         result4Field.setPrefWidth(90);    
         result4Field.setPrefHeight(10);
       
+      // Passing year
       
+      pyear.setText("Passing year ");         // Passing year Text
+      pyear.setX(820);                       //Position of Passing year text 
+      pyear.setY(410);
+      pyear.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings 
+      
+      pyear1Field.setLayoutX(820);      // Input Field for Passing year 1    
+      pyear1Field.setLayoutY(420);
+        pyear1Field.setPrefWidth(60);    
+        pyear1Field.setPrefHeight(10);
+      
+      pyear2Field.setLayoutX(820);      // Input Field for Passing year 2    
+      pyear2Field.setLayoutY(450);
+        pyear2Field.setPrefWidth(60);    
+        pyear2Field.setPrefHeight(10);
+      
+      pyear3Field.setLayoutX(820);      // Input Field for Passing year 3   
+      pyear3Field.setLayoutY(480);
+        pyear3Field.setPrefWidth(60);    
+        pyear3Field.setPrefHeight(10);
+        
+      pyear4Field.setLayoutX(820);      // Input Field for Passing year 4    
+      pyear4Field.setLayoutY(510);
+        pyear4Field.setPrefWidth(60);    
+        pyear4Field.setPrefHeight(10);
       
       
       
