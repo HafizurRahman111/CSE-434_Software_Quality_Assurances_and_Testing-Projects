@@ -119,9 +119,17 @@ import javax.imageio.ImageIO;
       Text marital_Status = new Text();                      // Text Object for Marital Status created
       ChoiceBox marital_Statusbox = new ChoiceBox(FXCollections.observableArrayList(
               "Single","Married","Divorced","Widow") );  // Marital Status Choice Box Object Created
-      
-      
+       
       Text educationalinfo = new Text();                // Text Object for Educational Qualification created
+      
+      Text degreename = new Text();                   // Text Object for Name of degree created
+      
+      TextField degreename1Field = new TextField();       // Input Field Object created for Degree 1
+       TextField degreename2Field = new TextField();       // Input Field Object created for Degree 2
+        TextField degreename3Field = new TextField();       // Input Field Object created for Degree 3
+         TextField degreename4Field = new TextField();       // Input Field Object created for Degree 4
+      
+      
       
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
       
@@ -175,7 +183,8 @@ import javax.imageio.ImageIO;
               fanameField,motname,motnameField,perAddress,perAddressField,dobText,
               dobhBox,nationality,nationalityField,gender,genderbox,religion,
               religionField,blood,bloodbox,marital_Status,marital_Statusbox,
-              educationalinfo
+              educationalinfo,degreename,degreename1Field,degreename2Field,
+              degreename3Field,degreename4Field
               
               
               
@@ -412,7 +421,33 @@ import javax.imageio.ImageIO;
       educationalinfo.setStrokeWidth(1);               //  Stroke size 
       educationalinfo.setUnderline(true); 
       
+      // Name of degree 
       
+      degreename.setText("Name of degree ");  // Name of degree Text
+      degreename.setX(30);                     //Position of the Name of degree text 
+      degreename.setY(410);
+      degreename.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings for Name of degree Text  
+               
+      
+      // Input Field for Name of degree 1 
+      
+      degreename1Field.setLayoutX(30);        // Position Setup for Name of degree 1 Input Field
+      degreename1Field.setLayoutY(420);
+      
+      // Input Field for Name of degree 2 
+      
+      degreename2Field.setLayoutX(30);        // Position Setup for Name of degree 2 Input Field
+      degreename2Field.setLayoutY(450);
+      
+      // Input Field for Name of degree 3
+      
+      degreename3Field.setLayoutX(30);        // Position Setup for Name of degree 3 Input Field
+      degreename3Field.setLayoutY(480);
+       
+      // Input Field for Name of degree 4
+      
+      degreename4Field.setLayoutX(30);        // Position Setup for Name of degree 4 Input Field
+      degreename4Field.setLayoutY(510);
       
  
       
