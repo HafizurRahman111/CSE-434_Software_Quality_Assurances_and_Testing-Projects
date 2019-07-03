@@ -164,6 +164,13 @@ import javax.imageio.ImageIO;
         TextField pyear3Field = new TextField();       // Input Field Object created for Passing year 3
          TextField pyear4Field = new TextField();       // Input Field Object created for Passing year 4 
          
+      Text working_exp   = new Text();                // Text Object for Working Experience created
+      
+      Text organization = new Text();                   // Text Object for Name of Organization created
+      TextField organizationField = new TextField();       // Input Field Object created for Name of Organization
+         
+         
+         
          
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
       
@@ -224,7 +231,7 @@ import javax.imageio.ImageIO;
               Boardnname4Field,group_sub,group_sub1Field,group_sub2Field,
               group_sub3Field,group_sub4Field,resultinfo,result1Field,result2Field,
               result3Field,result4Field,pyear,pyear1Field,pyear2Field,pyear3Field,
-              pyear4Field
+              pyear4Field,working_exp,organization,organizationField
               
               
               
@@ -233,7 +240,7 @@ import javax.imageio.ImageIO;
       
       
       
-      Scene scene = new Scene(form_gui, 980, 700);             // Scene object Created Here
+      Scene scene = new Scene(form_gui, 980, 730);             // Scene object Created Here
       
       stage.setTitle("CSE-434 Project01 Resume Builder by Hafizur Rahman");  // Set the title for Stage
       
@@ -620,6 +627,34 @@ import javax.imageio.ImageIO;
         pyear4Field.setPrefHeight(10);
       
       
+      // Working Experience
+      
+      working_exp.setText("Working Experience : ");  // Working Experience Text Title Here
+     
+      working_exp.setX(15);                          //Position of the Working Experience text 
+      working_exp.setY(560);
+      working_exp.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));   //Font Settings  
+      working_exp.setStrokeWidth(1);                //  Stroke size 
+      working_exp.setUnderline(true);   
+        
+      // Name of Organization 
+      
+      organization.setText("Organization ");     // Name of Organization  Text
+      organization.setX(200);                     //Position of the Organization text 
+      organization.setY(565);
+      organization.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings for Organization Text  
+               
+      
+      // Input Field for Name of Organization 
+      
+      organizationField.setLayoutX(200);        // Position Setup for Name of Organization Input Field
+      organizationField.setLayoutY(570);
+      
+      
+      
+      
+        
+        
       
        stage.setScene(scene);            // Scene added in stage       
        stage.show();                     //  Stage elements show 
