@@ -169,7 +169,8 @@ import javax.imageio.ImageIO;
       Text organization = new Text();                   // Text Object for Name of Organization created
       TextField organizationField = new TextField();       // Input Field Object created for Name of Organization
          
-         
+      Text duration = new Text();                      // Text Object for Duration created
+      TextField durationField = new TextField();       // Input Field Object created for Duration
          
          
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
@@ -231,7 +232,8 @@ import javax.imageio.ImageIO;
               Boardnname4Field,group_sub,group_sub1Field,group_sub2Field,
               group_sub3Field,group_sub4Field,resultinfo,result1Field,result2Field,
               result3Field,result4Field,pyear,pyear1Field,pyear2Field,pyear3Field,
-              pyear4Field,working_exp,organization,organizationField
+              pyear4Field,working_exp,organization,organizationField,duration,
+              durationField
               
               
               
@@ -650,6 +652,15 @@ import javax.imageio.ImageIO;
       organizationField.setLayoutX(200);        // Position Setup for Name of Organization Input Field
       organizationField.setLayoutY(570);
       
+      // Duration
+      
+      duration.setText("Duration ");          // Duration Text
+      duration.setX(360);                     //Position of The Duration text 
+      duration.setY(565);
+      duration.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings for Duration Text  
+               
+      durationField.setLayoutX(360);          // Position Setup Duration Input Field
+      durationField.setLayoutY(570);
       
       
       
