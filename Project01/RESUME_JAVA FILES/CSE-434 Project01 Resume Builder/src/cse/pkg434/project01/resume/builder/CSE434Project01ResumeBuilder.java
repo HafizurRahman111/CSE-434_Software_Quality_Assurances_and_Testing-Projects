@@ -171,7 +171,9 @@ import javax.imageio.ImageIO;
          
       Text duration = new Text();                      // Text Object for Duration created
       TextField durationField = new TextField();       // Input Field Object created for Duration
-         
+      
+      Text Designation = new Text();                      // Text Object for Designation created
+      TextField DesignationField = new TextField();       // Input Field Object Created for Designation
          
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
       
@@ -233,7 +235,7 @@ import javax.imageio.ImageIO;
               group_sub3Field,group_sub4Field,resultinfo,result1Field,result2Field,
               result3Field,result4Field,pyear,pyear1Field,pyear2Field,pyear3Field,
               pyear4Field,working_exp,organization,organizationField,duration,
-              durationField
+              durationField,Designation,DesignationField
               
               
               
@@ -662,7 +664,15 @@ import javax.imageio.ImageIO;
       durationField.setLayoutX(360);          // Position Setup Duration Input Field
       durationField.setLayoutY(570);
       
+      // Designation
       
+      Designation.setText("Designation ");           // Designation Text
+      Designation.setX(520);                         //Position of The Designation Text 
+      Designation.setY(565);
+      Designation.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings for Designation Text  
+               
+      DesignationField.setLayoutX(520);              // Position Setup Designation Input Field
+      DesignationField.setLayoutY(570);  
       
         
         
