@@ -174,7 +174,16 @@ import javax.imageio.ImageIO;
       
       Text Designation = new Text();                      // Text Object for Designation created
       TextField DesignationField = new TextField();       // Input Field Object Created for Designation
-         
+      
+      Text Languages  = new Text();                      // Text Object for Languages 
+      
+      Text Languages1  = new Text();                      // Text Object for Languages 1
+      TextField Languages1Field = new TextField();        // Input Field Object Created for Languages 1 
+      
+      Text Languages2  = new Text();                      // Text Object for Languages 2
+      TextField Languages2Field = new TextField();        // Input Field Object Created for Languages 2 
+      
+      
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
       
       PhotoView = new ImageView();                                 // Photo View Object Created
@@ -235,7 +244,9 @@ import javax.imageio.ImageIO;
               group_sub3Field,group_sub4Field,resultinfo,result1Field,result2Field,
               result3Field,result4Field,pyear,pyear1Field,pyear2Field,pyear3Field,
               pyear4Field,working_exp,organization,organizationField,duration,
-              durationField,Designation,DesignationField
+              durationField,Designation,DesignationField,Languages,Languages1,
+              Languages2,Languages1Field,Languages2Field
+              
               
               
               
@@ -674,8 +685,36 @@ import javax.imageio.ImageIO;
       DesignationField.setLayoutX(520);              // Position Setup Designation Input Field
       DesignationField.setLayoutY(570);  
       
+      // Languages 
+      
+      Languages.setText("Languages : ");            // Languages Text Title Here
+     
+      Languages.setX(15);                          //Position of The Languages Text 
+      Languages.setY(620);
+      Languages.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));   //Font Settings  
+      Languages.setStrokeWidth(1);                //  Stroke size 
+      Languages.setUnderline(true);     
         
-        
+      Languages1.setText("Language 1 ");           
+      Languages1.setX(200);                         
+      Languages1.setY(620);
+      Languages1.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
+               
+      Languages1Field.setLayoutX(280);              
+      Languages1Field.setLayoutY(610);  
+      
+      Languages2.setText("Language 2 ");           
+      Languages2.setX(480);                         
+      Languages2.setY(620);
+      Languages2.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
+               
+      Languages2Field.setLayoutX(560);              
+      Languages2Field.setLayoutY(610);  
+      
+      
+      
+      
+      
       
        stage.setScene(scene);            // Scene added in stage       
        stage.show();                     //  Stage elements show 
