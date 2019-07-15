@@ -184,6 +184,15 @@ import javax.imageio.ImageIO;
       TextField Languages2Field = new TextField();        // Input Field Object Created for Languages 2 
       
       
+      Text Skills  = new Text();                          // Text Object for Skills
+      
+      Text Skills1  = new Text();                       // Text Object for Skills 1
+      TextField Skills1Field = new TextField();          // Input Field Object Created for Skills 1
+      
+      Text Skills2  = new Text();                      // Text Object for Skills 2
+      TextField Skills2Field = new TextField();        // Input Field Object Created for Skills 2
+      
+      
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
       
       PhotoView = new ImageView();                                 // Photo View Object Created
@@ -245,7 +254,8 @@ import javax.imageio.ImageIO;
               result3Field,result4Field,pyear,pyear1Field,pyear2Field,pyear3Field,
               pyear4Field,working_exp,organization,organizationField,duration,
               durationField,Designation,DesignationField,Languages,Languages1,
-              Languages2,Languages1Field,Languages2Field
+              Languages2,Languages1Field,Languages2Field,Skills,Skills1,Skills1Field,
+              Skills2,Skills2Field
               
               
               
@@ -710,6 +720,44 @@ import javax.imageio.ImageIO;
                
       Languages2Field.setLayoutX(560);              
       Languages2Field.setLayoutY(610);  
+      
+      
+      
+       // Skills
+      
+      Skills.setText("Skills : ");                 // Skills Text Title Here
+     
+      Skills.setX(15);                             //Position of The Skills Text 
+      Skills.setY(660);
+      Skills.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));   //Font Settings  
+      Skills.setStrokeWidth(1);                //  Stroke size 
+      Skills.setUnderline(true);     
+        
+      Skills1.setText("Skill 1 ");           
+      Skills1.setX(200);                         
+      Skills1.setY(660);
+      Skills1.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
+               
+      Skills1Field.setLayoutX(280);              
+      Skills1Field.setLayoutY(650);  
+      
+      Skills2.setText("Skill 2 ");           
+      Skills2.setX(480);                         
+      Skills2.setY(660);
+      Skills2.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
+               
+      Skills2Field.setLayoutX(560);              
+      Skills2Field.setLayoutY(650);  
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       
