@@ -195,6 +195,10 @@ import javax.imageio.ImageIO;
       Text curriculum_act = new Text();               
       TextField curriculum_activitiesInput = new TextField();  
       
+      Text Certifications   = new Text();               
+      TextField CertificationsField  = new TextField(); 
+      
+  
       
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
       
@@ -257,7 +261,8 @@ import javax.imageio.ImageIO;
               working_exp,organization,organizationField,duration,
               durationField,Designation,DesignationField,Languages,Languages1,
               Languages2,Languages1Field,Languages2Field,Skills,Skills1,Skills1Field,
-              Skills2,Skills2Field,curriculum_act,curriculum_activitiesInput
+              Skills2,Skills2Field,curriculum_act,curriculum_activitiesInput,
+              Certifications,CertificationsField 
               
               
               
@@ -751,6 +756,23 @@ import javax.imageio.ImageIO;
         curriculum_activitiesInput.setPrefWidth(380);    
         curriculum_activitiesInput.setPrefHeight(10);
      
+       
+      // Certifications  
+       Certifications.setText("Certifications  : ");                 
+     
+       Certifications.setX(15);                             
+       Certifications.setY(680);
+       Certifications.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));   
+       Certifications.setStrokeWidth(1);               
+       Certifications.setUnderline(true);  
+      
+       CertificationsField.setLayoutX(265);              
+       CertificationsField.setLayoutY(665); 
+        CertificationsField.setPrefWidth(380);    
+        CertificationsField.setPrefHeight(10);
+       
+       
+      
       
       
        stage.setScene(scene);            // Scene added in stage       
