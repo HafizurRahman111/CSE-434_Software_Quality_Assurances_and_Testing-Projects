@@ -641,7 +641,7 @@ import javax.imageio.ImageIO;
       working_exp.setText("Working Experience : ");  // Working Experience Text Title Here
      
       working_exp.setX(15);                          //Position of the Working Experience text 
-      working_exp.setY(560);
+      working_exp.setY(530);
       working_exp.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));   //Font Settings  
       working_exp.setStrokeWidth(1);                //  Stroke size 
       working_exp.setUnderline(true);   
@@ -649,35 +649,35 @@ import javax.imageio.ImageIO;
       // Name of Organization 
       
       organization.setText("Organization ");     // Name of Organization  Text
-      organization.setX(200);                     //Position of the Organization text 
-      organization.setY(565);
+      organization.setX(180);                     //Position of the Organization text 
+      organization.setY(535);
       organization.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings for Organization Text  
                
       
       // Input Field for Name of Organization 
       
-      organizationField.setLayoutX(200);        // Position Setup for Name of Organization Input Field
-      organizationField.setLayoutY(570);
+      organizationField.setLayoutX(265);        // Position Setup for Name of Organization Input Field
+      organizationField.setLayoutY(520);
       
       // Duration
       
       duration.setText("Duration ");          // Duration Text
-      duration.setX(360);                     //Position of The Duration text 
-      duration.setY(565);
+      duration.setX(430);                     //Position of The Duration text 
+      duration.setY(535);
       duration.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings for Duration Text  
                
-      durationField.setLayoutX(360);          // Position Setup Duration Input Field
-      durationField.setLayoutY(570);
+      durationField.setLayoutX(500);          // Position Setup Duration Input Field
+      durationField.setLayoutY(520);
       
       // Designation
       
       Designation.setText("Designation ");           // Designation Text
-      Designation.setX(520);                         //Position of The Designation Text 
-      Designation.setY(565);
+      Designation.setX(660);                         //Position of The Designation Text 
+      Designation.setY(535);
       Designation.setFont(Font.font("Arial",FontPosture.REGULAR,14)); //Font Settings for Designation Text  
                
-      DesignationField.setLayoutX(520);              // Position Setup Designation Input Field
-      DesignationField.setLayoutY(570);  
+      DesignationField.setLayoutX(740);              // Position Setup Designation Input Field
+      DesignationField.setLayoutY(520);  
       
       // Languages 
       
@@ -734,24 +734,7 @@ import javax.imageio.ImageIO;
       Skills2Field.setLayoutY(650);  
       
       
-       // Skills
-      
-      Skills.setText("Skills : ");                 // Skills Text Title Here
      
-      Skills.setX(15);                             //Position of The Skills Text 
-      Skills.setY(660);
-      Skills.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));   //Font Settings  
-      Skills.setStrokeWidth(1);                //  Stroke size 
-      Skills.setUnderline(true);     
-        
-      Skills1.setText("Skill 1 ");           
-      Skills1.setX(200);                         
-      Skills1.setY(660);
-      Skills1.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
-               
-      Skills1Field.setLayoutX(280);              
-      Skills1Field.setLayoutY(650);  
-      
       
       
       
