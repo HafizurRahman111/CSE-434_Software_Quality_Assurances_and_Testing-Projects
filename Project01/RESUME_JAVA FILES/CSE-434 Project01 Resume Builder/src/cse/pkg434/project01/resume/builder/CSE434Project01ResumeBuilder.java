@@ -712,39 +712,32 @@ import javax.imageio.ImageIO;
       Skills.setText("Skills : ");                 // Skills Text Title Here
      
       Skills.setX(15);                             //Position of The Skills Text 
-      Skills.setY(660);
+      Skills.setY(610);
       Skills.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));   //Font Settings  
       Skills.setStrokeWidth(1);                //  Stroke size 
       Skills.setUnderline(true);     
         
       Skills1.setText("Skill 1 ");           
-      Skills1.setX(200);                         
-      Skills1.setY(660);
+      Skills1.setX(180);                         
+      Skills1.setY(610);
       Skills1.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
                
-      Skills1Field.setLayoutX(280);              
-      Skills1Field.setLayoutY(650);  
+      Skills1Field.setLayoutX(265);              
+      Skills1Field.setLayoutY(595);  
       
       Skills2.setText("Skill 2 ");           
-      Skills2.setX(480);                         
-      Skills2.setY(660);
+      Skills2.setX(420);                         
+      Skills2.setY(610);
       Skills2.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
                
-      Skills2Field.setLayoutX(560);              
-      Skills2Field.setLayoutY(650);  
+      Skills2Field.setLayoutX(500);              
+      Skills2Field.setLayoutY(595);  
       
       
      
       
       
-      
-      
-      
-      
-      
-      
-      
-      
+   
       
       
       
