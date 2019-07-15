@@ -205,8 +205,11 @@ import javax.imageio.ImageIO;
       Text Rec_Designation   = new Text();  
       TextField Rec_DesignationField  = new TextField(); 
       
+      Text Rec_Institution   = new Text();  
+      TextField Rec_InstitutionField  = new TextField(); 
       
-      
+      Text Rec_Email   = new Text();  
+      TextField Rec_EmailField  = new TextField(); 
       
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
       
@@ -271,7 +274,8 @@ import javax.imageio.ImageIO;
               Languages2,Languages1Field,Languages2Field,Skills,Skills1,Skills1Field,
               Skills2,Skills2Field,curriculum_act,curriculum_activitiesInput,
               Certifications,CertificationsField,Recommendations,Rec_Name ,Rec_NameField,
-              Rec_Designation,Rec_DesignationField
+              Rec_Designation,Rec_DesignationField,Rec_Institution,Rec_InstitutionField,
+              Rec_Email ,Rec_EmailField
               
               
               
@@ -806,6 +810,25 @@ import javax.imageio.ImageIO;
                
       Rec_DesignationField.setLayoutX(790);              
       Rec_DesignationField.setLayoutY(612);  
+      
+      Rec_Institution.setText("Institution ");           
+      Rec_Institution.setX(680);                         
+      Rec_Institution.setY(660);
+      Rec_Institution.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
+               
+      Rec_InstitutionField.setLayoutX(790);              
+      Rec_InstitutionField.setLayoutY(642);
+      
+      
+      Rec_Email.setText("E-mail ");           
+      Rec_Email.setX(680);                         
+      Rec_Email.setY(690);
+      Rec_Email.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
+               
+      Rec_EmailField.setLayoutX(790);              
+      Rec_EmailField.setLayoutY(672);
+      
+      
       
       
       
