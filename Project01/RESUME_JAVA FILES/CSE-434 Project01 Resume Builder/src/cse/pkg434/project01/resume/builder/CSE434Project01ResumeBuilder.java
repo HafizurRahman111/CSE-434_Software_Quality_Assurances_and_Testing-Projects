@@ -684,26 +684,26 @@ import javax.imageio.ImageIO;
       Languages.setText("Languages : ");            // Languages Text Title Here
      
       Languages.setX(15);                          //Position of The Languages Text 
-      Languages.setY(620);
+      Languages.setY(570);
       Languages.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));   //Font Settings  
       Languages.setStrokeWidth(1);                //  Stroke size 
       Languages.setUnderline(true);     
         
       Languages1.setText("Language 1 ");           
-      Languages1.setX(200);                         
-      Languages1.setY(620);
+      Languages1.setX(180);                         
+      Languages1.setY(575);
       Languages1.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
                
-      Languages1Field.setLayoutX(280);              
-      Languages1Field.setLayoutY(610);  
+      Languages1Field.setLayoutX(265);              
+      Languages1Field.setLayoutY(560);  
       
       Languages2.setText("Language 2 ");           
-      Languages2.setX(480);                         
-      Languages2.setY(620);
+      Languages2.setX(420);                         
+      Languages2.setY(575);
       Languages2.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
                
-      Languages2Field.setLayoutX(560);              
-      Languages2Field.setLayoutY(610);  
+      Languages2Field.setLayoutX(500);              
+      Languages2Field.setLayoutY(560);  
       
       
       
