@@ -198,7 +198,15 @@ import javax.imageio.ImageIO;
       Text Certifications   = new Text();               
       TextField CertificationsField  = new TextField(); 
       
-  
+      Text Recommendations   = new Text();               
+      Text Rec_Name   = new Text();  
+      TextField Rec_NameField  = new TextField(); 
+      
+      Text Rec_Designation   = new Text();  
+      TextField Rec_DesignationField  = new TextField(); 
+      
+      
+      
       
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
       
@@ -262,7 +270,8 @@ import javax.imageio.ImageIO;
               durationField,Designation,DesignationField,Languages,Languages1,
               Languages2,Languages1Field,Languages2Field,Skills,Skills1,Skills1Field,
               Skills2,Skills2Field,curriculum_act,curriculum_activitiesInput,
-              Certifications,CertificationsField 
+              Certifications,CertificationsField,Recommendations,Rec_Name ,Rec_NameField,
+              Rec_Designation,Rec_DesignationField
               
               
               
@@ -272,7 +281,7 @@ import javax.imageio.ImageIO;
       
       
       
-      Scene scene = new Scene(form_gui, 980, 730);             // Scene object Created Here
+      Scene scene = new Scene(form_gui, 980, 740);             // Scene object Created Here
       
       stage.setTitle("CSE-434 Project01 Resume Builder by Hafizur Rahman");  // Set the title for Stage
       
@@ -772,8 +781,37 @@ import javax.imageio.ImageIO;
         CertificationsField.setPrefHeight(10);
        
        
+       // Recommendations :
+      
+      Recommendations.setText("Recommendations : ");                
+     
+      Recommendations.setX(670);                             
+      Recommendations.setY(570);
+      Recommendations.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));   //Font Settings  
+      Recommendations.setStrokeWidth(1);                                               //  Stroke size 
+      Recommendations.setUnderline(true);     
+        
+      Rec_Name.setText("Name ");           
+      Rec_Name.setX(680);                         
+      Rec_Name.setY(600);
+      Rec_Name.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
+               
+      Rec_NameField.setLayoutX(790);              
+      Rec_NameField.setLayoutY(580);  
+      
+      Rec_Designation.setText("Designation ");           
+      Rec_Designation.setX(680);                         
+      Rec_Designation.setY(630);
+      Rec_Designation.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
+               
+      Rec_DesignationField.setLayoutX(790);              
+      Rec_DesignationField.setLayoutY(612);  
       
       
+      
+      
+      
+
       
        stage.setScene(scene);            // Scene added in stage       
        stage.show();                     //  Stage elements show 
