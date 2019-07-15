@@ -45,9 +45,13 @@ import java.util.logging.Logger;
 import javafx.collections.FXCollections;
 
 import javafx.embed.swing.SwingFXUtils;
+import javafx.geometry.HPos;
+import javafx.geometry.Insets;
+import javafx.scene.control.Alert;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.stage.Window;
 import javax.imageio.ImageIO;
 
 
@@ -211,6 +215,8 @@ import javax.imageio.ImageIO;
       Text Rec_Email   = new Text();  
       TextField Rec_EmailField  = new TextField(); 
       
+      Button submit = new Button("Submit Your Information");        //  Submission Button
+      
       Button btnImageLoad = new Button("Upload Your Photo Here");  // Photo Upload Button With Text
       
       PhotoView = new ImageView();                                 // Photo View Object Created
@@ -275,7 +281,7 @@ import javax.imageio.ImageIO;
               Skills2,Skills2Field,curriculum_act,curriculum_activitiesInput,
               Certifications,CertificationsField,Recommendations,Rec_Name ,Rec_NameField,
               Rec_Designation,Rec_DesignationField,Rec_Institution,Rec_InstitutionField,
-              Rec_Email ,Rec_EmailField
+              Rec_Email ,Rec_EmailField,submit
               
               
               
@@ -830,7 +836,40 @@ import javax.imageio.ImageIO;
       
       
       
+       // Submit Button
       
+       submit.setPrefHeight(20);
+       submit.setDefaultButton(true);
+       submit.setPrefWidth(200);
+       
+       submit.setLayoutX(370);  
+       submit.setLayoutY(705);
+       
+      
+        submit.setOnAction(new EventHandler<ActionEvent>() 
+       {
+            @Override 
+             public void handle(ActionEvent evn) 
+            {
+                
+                 if(nameField.getText().isEmpty()) 
+                {
+                    AlertNotification(Alert.AlertType.ERROR, stage.getScene().getWindow(), "Error Occured !", "Your Name Field is Empty\n\t  Please Enter Your Name");
+                    return ;
+                    
+                }
+                 
+                if(caddressField.getText().isEmpty()) 
+                {
+                    AlertNotification(Alert.AlertType.ERROR, stage.getScene().getWindow(),"Error Occured !", "Your Current Address Field is Empty\n\tPlease Enter Your Current Address");
+                    return ;
+                    
+                }
+
+                AlertNotification(Alert.AlertType.CONFIRMATION, stage.getScene().getWindow(), "Successfully Completed !", "Welcome " + nameField.getText());
+            }
+             
+        } );
       
       
       
@@ -842,6 +881,25 @@ import javax.imageio.ImageIO;
           
     }
 
+  
+     
+      private void AlertNotification(Alert.AlertType alert_Type, Window owner, String title, String message)
+    {
+        
+        Alert alert = new Alert(alert_Type);
+        
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.initOwner(owner);
+        alert.show();
+        
+        
+    }
+     
+     
+     
+     
      
      
      
