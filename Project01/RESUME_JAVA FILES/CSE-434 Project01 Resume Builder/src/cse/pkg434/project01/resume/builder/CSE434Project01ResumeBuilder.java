@@ -127,42 +127,42 @@ import javax.imageio.ImageIO;
       TextField degreename1Field = new TextField();       // Input Field Object created for Degree 1
        TextField degreename2Field = new TextField();       // Input Field Object created for Degree 2
         TextField degreename3Field = new TextField();       // Input Field Object created for Degree 3
-         TextField degreename4Field = new TextField();       // Input Field Object created for Degree 4
+         
       
       Text institutionname = new Text();                   // Text Object for Institution Name created
       
       TextField institutionname1Field = new TextField();       // Input Field Object created for Institution 1
        TextField institutionname2Field = new TextField();       // Input Field Object created for Institution 2
         TextField institutionname3Field = new TextField();       // Input Field Object created for Institution 3
-         TextField institutionname4Field = new TextField();       // Input Field Object created for Institution 4
+        
       
       Text Boardnname = new Text();                   // Text Object for Board Name created
          
       TextField Boardnname1Field = new TextField();       // Input Field Object created for Board 1
        TextField Boardnname2Field = new TextField();       // Input Field Object created for Board 2
         TextField Boardnname3Field = new TextField();       // Input Field Object created for Board 3
-         TextField Boardnname4Field = new TextField();       // Input Field Object created for Board 4
+         
       
       Text group_sub = new Text();                      // Text Object for Group or Subject created
       
       TextField group_sub1Field = new TextField();       // Input Field Object created for Group/Subject 1
        TextField group_sub2Field = new TextField();       // Input Field Object created for Group/Subject 2
         TextField group_sub3Field = new TextField();       // Input Field Object created for Group/Subject 3
-         TextField group_sub4Field = new TextField();       // Input Field Object created for Group/Subject 4
+        
       
       Text resultinfo = new Text();                      // Text Object for Result created
       
       TextField result1Field = new TextField();       // Input Field Object created for Result 1
        TextField result2Field = new TextField();       // Input Field Object created for Result 2
         TextField result3Field = new TextField();       // Input Field Object created for Result 3
-         TextField result4Field = new TextField();       // Input Field Object created for Result 4 
+         
          
       Text pyear = new Text();                         // Text Object for Passing Year created
       
       TextField pyear1Field = new TextField();       // Input Field Object created for Passing year 1
        TextField pyear2Field = new TextField();       // Input Field Object created for Passing year 2
         TextField pyear3Field = new TextField();       // Input Field Object created for Passing year 3
-         TextField pyear4Field = new TextField();       // Input Field Object created for Passing year 4 
+        
          
       Text working_exp   = new Text();                // Text Object for Working Experience created
       
@@ -246,13 +246,12 @@ import javax.imageio.ImageIO;
               dobhBox,nationality,nationalityField,gender,genderbox,religion,
               religionField,blood,bloodbox,marital_Status,marital_Statusbox,
               educationalinfo,degreename,degreename1Field,degreename2Field,
-              degreename3Field,degreename4Field,institutionname,institutionname1Field,
-              institutionname2Field,institutionname3Field,institutionname4Field,
-              Boardnname,Boardnname1Field,Boardnname2Field,Boardnname3Field,
-              Boardnname4Field,group_sub,group_sub1Field,group_sub2Field,
-              group_sub3Field,group_sub4Field,resultinfo,result1Field,result2Field,
-              result3Field,result4Field,pyear,pyear1Field,pyear2Field,pyear3Field,
-              pyear4Field,working_exp,organization,organizationField,duration,
+              degreename3Field,institutionname,institutionname1Field,institutionname2Field,
+              institutionname3Field,Boardnname,Boardnname1Field,Boardnname2Field,Boardnname3Field,
+              group_sub,group_sub1Field,group_sub2Field,
+              group_sub3Field,resultinfo,result1Field,result2Field,
+              result3Field,pyear,pyear1Field,pyear2Field,pyear3Field,
+              working_exp,organization,organizationField,duration,
               durationField,Designation,DesignationField,Languages,Languages1,
               Languages2,Languages1Field,Languages2Field,Skills,Skills1,Skills1Field,
               Skills2,Skills2Field
@@ -516,10 +515,8 @@ import javax.imageio.ImageIO;
       degreename3Field.setLayoutX(30);        // Position Setup for Name of degree 3 Input Field
       degreename3Field.setLayoutY(480);
        
-      // Input Field for Name of degree 4
       
-      degreename4Field.setLayoutX(30);        // Position Setup for Name of degree 4 Input Field
-      degreename4Field.setLayoutY(510);
+     
       
      // Institution Names 
      
@@ -544,10 +541,7 @@ import javax.imageio.ImageIO;
       institutionname3Field.setLayoutX(200);        // Position Setup for Institution 3 
       institutionname3Field.setLayoutY(480);
        
-      // Input Field for Institution 4 
-      
-      institutionname4Field.setLayoutX(200);        // Position Setup for Institution 4 
-      institutionname4Field.setLayoutY(510);
+     
       
       // Board
       
@@ -571,10 +565,7 @@ import javax.imageio.ImageIO;
       Boardnname3Field.setLayoutX(370);        // Position Setup for Board 3 
       Boardnname3Field.setLayoutY(480);
       
-      // Input Field for Board 4 
-      
-      Boardnname4Field.setLayoutX(370);        // Position Setup for Board 4 
-      Boardnname4Field.setLayoutY(510);
+     
       
        
       // Group or Subject
@@ -593,8 +584,7 @@ import javax.imageio.ImageIO;
       group_sub3Field.setLayoutX(540);      // Input Field for Group or Subject 3   
       group_sub3Field.setLayoutY(480);
       
-      group_sub4Field.setLayoutX(540);      // Input Field for Group or Subject 4    
-      group_sub4Field.setLayoutY(510);
+     
       
       
       //Result	
@@ -619,10 +609,7 @@ import javax.imageio.ImageIO;
         result3Field.setPrefWidth(90);    
         result3Field.setPrefHeight(10);
         
-      result4Field.setLayoutX(700);      // Input Field for Result 4    
-      result4Field.setLayoutY(510);
-        result4Field.setPrefWidth(90);    
-        result4Field.setPrefHeight(10);
+     
       
       // Passing year
       
@@ -646,10 +633,7 @@ import javax.imageio.ImageIO;
         pyear3Field.setPrefWidth(60);    
         pyear3Field.setPrefHeight(10);
         
-      pyear4Field.setLayoutX(820);      // Input Field for Passing year 4    
-      pyear4Field.setLayoutY(510);
-        pyear4Field.setPrefWidth(60);    
-        pyear4Field.setPrefHeight(10);
+     
       
       
       // Working Experience
@@ -750,6 +734,23 @@ import javax.imageio.ImageIO;
       Skills2Field.setLayoutY(650);  
       
       
+       // Skills
+      
+      Skills.setText("Skills : ");                 // Skills Text Title Here
+     
+      Skills.setX(15);                             //Position of The Skills Text 
+      Skills.setY(660);
+      Skills.setFont(Font.font("Times New Roman",FontPosture.REGULAR,16));   //Font Settings  
+      Skills.setStrokeWidth(1);                //  Stroke size 
+      Skills.setUnderline(true);     
+        
+      Skills1.setText("Skill 1 ");           
+      Skills1.setX(200);                         
+      Skills1.setY(660);
+      Skills1.setFont(Font.font("Arial",FontPosture.REGULAR,14));   
+               
+      Skills1Field.setLayoutX(280);              
+      Skills1Field.setLayoutY(650);  
       
       
       
