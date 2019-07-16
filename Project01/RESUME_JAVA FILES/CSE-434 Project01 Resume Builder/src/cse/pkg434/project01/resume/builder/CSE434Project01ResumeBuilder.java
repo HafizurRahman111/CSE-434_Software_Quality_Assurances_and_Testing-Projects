@@ -882,10 +882,28 @@ import javax.imageio.ImageIO;
                 
                 // Personal Information
                 
-              
+               if(fanameField.getText().isEmpty()) 
+                {
+                    AlertNotification(Alert.AlertType.ERROR, stage.getScene().getWindow(),"Error Occured !", "Your Father's Name Field is Empty\n\tPlease Enter Your Father's Name");
+                    return ;
+                    
+                }
                 
+                if(motnameField.getText().isEmpty()) 
+                {
+                    AlertNotification(Alert.AlertType.ERROR, stage.getScene().getWindow(),"Error Occured !", "Your Mother's Name Field is Empty\n\tPlease Enter Your Mother's Name");
+                    return ;
+                    
+                }
                 
+                if(perAddressField.getText().isEmpty()) 
+                {
+                    AlertNotification(Alert.AlertType.ERROR, stage.getScene().getWindow(),"Error Occured !", "Your Permanent Address Field is Empty\n\tPlease Enter Your Permanent Address");
+                    return ;
+                    
+                }
                 
+               
                 
                 
                 
