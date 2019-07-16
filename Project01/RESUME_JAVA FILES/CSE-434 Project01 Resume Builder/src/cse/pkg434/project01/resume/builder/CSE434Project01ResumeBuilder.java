@@ -851,7 +851,7 @@ import javax.imageio.ImageIO;
             @Override 
              public void handle(ActionEvent evn) 
             {
-                
+                // Contact Information
                  if(nameField.getText().isEmpty()) 
                 {
                     AlertNotification(Alert.AlertType.ERROR, stage.getScene().getWindow(), "Error Occured !", "Your Name Field is Empty\n\t  Please Enter Your Name");
@@ -865,6 +865,39 @@ import javax.imageio.ImageIO;
                     return ;
                     
                 }
+                
+                if(contactField.getText().isEmpty()) 
+                {
+                    AlertNotification(Alert.AlertType.ERROR, stage.getScene().getWindow(),"Error Occured !", "Your  Contact Number Field is Empty\n\tPlease Enter Your Contact Number");
+                    return ;
+                    
+                }
+                
+                if(emailField.getText().isEmpty()) 
+                {
+                    AlertNotification(Alert.AlertType.ERROR, stage.getScene().getWindow(),"Error Occured !", "Your  Email Address Field is Empty\n\tPlease Enter Your Email Address");
+                    return ;
+                    
+                }
+                
+                // Personal Information
+                
+              
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
 
                 AlertNotification(Alert.AlertType.CONFIRMATION, stage.getScene().getWindow(), "Successfully Completed !", "Welcome " + nameField.getText());
             }
